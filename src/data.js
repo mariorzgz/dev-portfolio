@@ -3,8 +3,8 @@ export const projects = [
     title: "Random Quote Machine",
     subtitle: "React",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-    image: "./project-1.gif",
+      "My first app in React. It started as an exercise for the freecodecamp Frontend Development Libraries course. You get a random color and a random font for each quote, making fun and dumb combinations",
+    image: "./random-quote.gif",
     link: "https://mariorzgz.github.io/random-quote-machine/",
     year: "2022"
   },
@@ -12,18 +12,27 @@ export const projects = [
     title: "Refresh",
     subtitle: "Ruby on Rails",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-    image: "./project-2.gif",
+      "Final project for Le Wagon Ruby on Rails bootcamp. It's an app for trading, sharing and showing your personal style. People can upload photos, tag items and then trade those items",
+    image: "./refresh.gif",
     link: "https://www.refresh-your-style.com/",
     year: "2022"
+  },
+  {
+    title: "Tribu",
+    subtitle: "Wordpress",
+    description:
+      "Website for a gym I made while I was working at ONMI Design, a creative agency from Spain. It's a one page site with multiple svg animations and microinteractions with the user.",
+    image: "./tribu.gif",
+    link: "https://tribu.center/",
+    year: "2020"
   },
   {
     title: "Cuchillo Amigo",
     subtitle: "Wordpress",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-    image: "./project-3.gif",
+      "Final project for my two years Interactive Media Degree in Spain. It's a vegan recipes blog with entries, categories and photos. It's the first website I've built.",
+    image: "./cuchillo-amigo.gif",
     link: "https://cuchilloamigo.com/",
-    year: "2019"
+    year: "2020"
   },
 ];
