@@ -1,3 +1,14 @@
+export const skills = [
+  "React",
+  "Ruby on Rails",
+  "JavaScript ES6",
+  "HTML",
+  "CSS",
+  "Tailwind",
+  "Bootstrap",
+  "Wordpress"
+]
+
 export const projects = [
   {
     title: "Random Quote Machine",
