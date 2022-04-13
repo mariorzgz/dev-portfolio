@@ -9,7 +9,7 @@ import './App.css';
 
 function App() {
   return (
-    <main className="text-gray-400 bg-gray-900 body-font">
+    <main className="text-gray-800 body-font bg-orange-200">
       <Navbar />
       <About />
       <Projects />
