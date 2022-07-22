@@ -1,19 +1,26 @@
 import { CodeIcon } from "@heroicons/react/solid";
 import React from "react";
-import { projects } from "../data";
+import { webprojects } from "../data";
 
-export default function Projects() {
+export default function WebPortfolio() {
   return (
     <section id="projects" className="body-font">
-      <div className="container px-5 py-10 mx-auto text-center lg:px-40">
-        <div className="flex flex-col w-full mb-20">
-          <CodeIcon className="mx-auto inline-block w-10 mb-4" />
-          <h1 className="sm:text-4xl text-3xl font-medium title-font mb-4">
-            Apps I've Built
-          </h1>
+
+      <div>
+        <div>
+          <h2>
+            Web Portfolio
+          </h2>
+          <p>
+
+            I've worked for 1 year in Spain and I've done an intensive Ruby on Rails bootcamp in Munich.
+            I also like to learn on my own about other coding languages and I have tons of personal projects.
+
+          </p>
         </div>
+
         <div className="flex flex-wrap -m-4">
-          {projects.map((project) => (
+          {webprojects.map((project) => (
             <a
               target="_blank"
               rel="noreferrer"
@@ -40,9 +47,7 @@ export default function Projects() {
             </a>
           ))}
         </div>
-        <div>
-          <p className="px-5 py-10 mx-auto text-center">And also, this website is made on React! Of course.</p>
-        </div>
+
       </div>
     </section>
   );

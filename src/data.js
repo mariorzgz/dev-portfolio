@@ -9,7 +9,19 @@ export const skills = [
   "Wordpress"
 ]
 
-export const projects = [
+export const designprojects = [
+  {
+    title: "Random Quote Machine",
+    subtitle: "React",
+    description:
+      "My first app in React. It started as an exercise for the freecodecamp Frontend Development Libraries course. You get a random color and a random font for each quote, making fun and dumb combinations",
+    image: "./random-quote.gif",
+    link: "https://mariorzgz.github.io/random-quote-machine/",
+    year: "2022"
+  }
+]
+
+export const webprojects = [
   {
     title: "Random Quote Machine",
     subtitle: "React",

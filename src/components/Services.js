@@ -2,9 +2,9 @@ import { BadgeCheckIcon, ChipIcon } from "@heroicons/react/solid";
 import React from "react";
 import { skills } from "../data";
 
-export default function Skills() {
+export default function Services() {
   return (
-    <section id="skills">
+    <section id="services">
       <div className="container px-5 py-10 mx-auto">
         <div className="text-center mb-20">
           <ChipIcon className="w-10 inline-block mb-4" />

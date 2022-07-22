@@ -1,20 +1,22 @@
 import React from "react";
+import Intro from "./components/Intro";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Navbar from "./components/Navbar";
-import Projects from "./components/Projects";
-import Skills from "./components/Skills";
-import Testimonials from "./components/Testimonials";
+import WebPortfolio from "./components/WebPortfolio";
+import DesignPortfolio from "./components/DesignPortfolio";
+import Services from "./components/Services";
 import './App.css';
 
 function App() {
   return (
-    <main className="text-gray-800 body-font bg-orange-200">
+    <main className="body-bg">
       <Navbar />
+      <Intro />
+      <WebPortfolio />
+      <DesignPortfolio />
       <About />
-      <Projects />
-      <Skills />
-      <Testimonials />
+      <Services />
       <Contact />
     </main>
   );
