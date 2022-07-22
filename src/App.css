@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Emoji:wght@700&display=swap');
+
 @font-face {
   font-family: 'cocogoose';
   src: url('../public/cocogoose-webfont.woff2') format('woff2'),
@@ -6,11 +8,34 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'cascadia';
+  src: url('../public/CascadiaCode.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+h1, h2, h3{
+  color: #F05A24;
+  font-family: "cocogoose";
+  font-weight: 500;
+}
+
+body{
+  font-family: "cascadia";
+  margin: 0;
+  padding: 0;
+}
+
 .body-bg{
   background-color: #FFF3E2;
 }
 
-h1, h2{
-  color: #F05A24;
-  font-family: "cocogoose";
+a{
+  text-decoration: none;
+  color: initial;
+}
+
+.emoji{
+  font-family: 'Noto Emoji', sans-serif;
 }
