@@ -1,1 +1,54 @@
 /* Web Portfolio */
+.web-projects{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  overflow: hidden;
+}
+
+.web-projects .d-flex{
+  overflow: hidden;
+}
+
+.web-projects .project{
+  width: 500px;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+@keyframes scroll{
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 8));
+  }
+}
+
+.animation-top{
+  animation: scroll 40s linear infinite;
+}
+
+.animation-down{
+  animation: scroll 40s linear infinite reverse -15s;
+}
+
+.slider {
+  width: 60%;
+  margin: auto;
+  overflow:hidden;
+  position: relative;
+
+}
+
+.slider-wrap {
+		display: flex;
+		width: calc(500px * 10);
+    height:100%;
+	}
+
+.slide{
+  width:250px;
+  height:100%;
+  text-align:center;
+}

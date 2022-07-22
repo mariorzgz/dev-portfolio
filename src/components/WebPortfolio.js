@@ -37,9 +37,46 @@ class WebPortfolio extends Component{
 
   render(){
 
+    const size = 6
+    const firstHalf = webprojects.map(project => {
+        return (
+          <img className="project slide"
+          key={project.title}
+          src={project.image}
+          alt={project.title}
+          onClick={this.handleProjects}
+          id={project.title}
+          data-title={project.title}
+          data-description={project.description}
+          data-subtitle={project.subtitle}
+          data-year={project.year}
+          data-link={project.link}
+          data-image={project.image}
+          ></img>
+        )
+    });
+
+    const secondHalf = webprojects.map(project => {
+      return (
+        <img className="project slide"
+        key={project.title}
+        src={project.image}
+        alt={project.title}
+        onClick={this.handleProjects}
+        id={project.title}
+        data-title={project.title}
+        data-description={project.description}
+        data-subtitle={project.subtitle}
+        data-year={project.year}
+        data-link={project.link}
+        data-image={project.image}
+        ></img>
+      )
+  });
+
     return (
 
-      <section id="projects" className="body-font">
+      <section id="web-portolio" className="padding-y">
 
         <div className="d-flex">
 
@@ -60,42 +97,31 @@ class WebPortfolio extends Component{
 
           </div>
 
-          <div className="">
 
           <Viewer
-            // title={this.state.title}
+            title={this.state.title}
             description={this.state.description}
             subtitle={this.state.subtitle}
           />
 
-            {webprojects.map((project) => (
+          <div className="web-projects slider">
 
-              <div>
+            <div className="d-flex slider-wrap animation-top">
 
-                <h2 className="">
-                        {project.title}
-                </h2>
+              {firstHalf}{firstHalf}
 
-                <button onClick={this.handleProjects}
-                        id={project.title}
-                        data-title={project.title}
-                        data-description={project.description}
-                        data-subtitle={project.subtitle}
-                        data-year={project.year}
-                        data-link={project.link}
-                        data-image={project.image}
-                        >
+            </div>
 
-                {project.title}
+            <div className="d-flex slider-wrap animation-down">
 
-                </button>
+              {secondHalf}{secondHalf}
 
-              </div>
+            </div>
 
-            ))}
           </div>
 
         </div>
+
       </section>
     );
 

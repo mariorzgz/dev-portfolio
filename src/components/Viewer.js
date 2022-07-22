@@ -4,7 +4,7 @@ class Viewer extends React.Component{
 
   render(){
     return(
-      <div id="output">
+      <div id="viewer">
       ------------
         <p id="description">{this.props.description}</p>
         <p id="subtitle">{this.props.subtitle}</p>

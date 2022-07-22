@@ -1,4 +1,7 @@
-/* Popup style */
+/* Viewer */
+#viewer{
+  display: none;
+}
 
 .popup-box {
   position: fixed;
