@@ -15,23 +15,44 @@
   font-style: normal;
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #FFF3E2;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #F05A24;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #F05A24;
+}
+
 h1, h2, h3{
   color: #F05A24;
   font-family: "cocogoose";
   font-weight: 500;
 }
 
-h1{
-  font-size: 3em;
+h1, h2{
+  font-size: 2.4em;
 }
 
 .emoji{
   font-family: 'Noto Emoji', sans-serif;
-  font-size: 5em;
+  font-size: 4.5em;
 }
 
 body{
   font-family: "cascadia";
+  font-size: 1.2em;
   margin: 0;
   padding: 0;
 }
@@ -81,14 +102,20 @@ a{
   top: 0;
 }
 
+.width-33{
+  width: 33%;
+}
+
 .width-50{
   width: 50%;
 }
 
+.width-66{
+  width: 66%;
+}
+
+
 .position-bottom{
   position: absolute;
   bottom: 0;
-  width: 100%;
-  white-space: nowrap;
-  overflow: hidden;
 }

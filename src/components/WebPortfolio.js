@@ -80,13 +80,13 @@ class WebPortfolio extends Component{
 
         <div className="d-flex">
 
-          <div className="width-50 padding">
+          <div className="width-33 padding">
 
             <h2>
               Web Portfolio
             </h2>
 
-            <p>
+            <p className="width-66">
 
               I've worked for 1 year in Spain and I've done an intensive Ruby on Rails bootcamp in Munich.
               <br></br>

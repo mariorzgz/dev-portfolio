@@ -8,3 +8,26 @@
 #intro h1{
   position: absolute;
 }
+
+@keyframes band{
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(calc(-1903px));
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+#intro {
+  overflow: hidden;
+}
+
+#intro .emoji{
+  width: 100%;
+  animation: band 180s linear infinite;
+  white-space: nowrap;
+  padding-bottom: .25em;
+}
