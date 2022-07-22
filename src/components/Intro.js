@@ -4,13 +4,13 @@ export default function Intro() {
   return (
     <section id="intro">
 
-      <div className="container">
+      <div className="d-flex align-items-center padding-x">
 
-        Servus! I'm Mario, a Fullstack Developer and Graphic Designer based in Munich.
+        <h1 className="width-50">Servus! I'm Mario,<br></br>a Fullstack Developer<br></br>and Graphic Designer<br></br>based in Munich.</h1>
 
       </div>
 
-      <div>
+      <div className="emoji position-bottom">
 
         🍓🎂🍦☺🐈💕💴😍🛝🥑🤣🧸🪐🫶📨🐇✨⛱👌🍻🌿🌍
 

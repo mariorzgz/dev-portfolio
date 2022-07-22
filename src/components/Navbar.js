@@ -2,19 +2,24 @@ import React from "react";
 
 export default function Navbar() {
   return (
-    <header className="">
-      <div className="container">
+    <header className="container navbar">
+
         <div className="">
-          <a href="#about" className="ml-3 text-xl">
-            Mario RZGZ
+
+          <a href="#about" className="">
+            Mario Rodríguez
           </a>
+
         </div>
-        <nav className="#contact">
+
+        <nav className="">
+
           <a href="#projects" className="">
             Contact
           </a>
+
         </nav>
-      </div>
+
     </header>
   );
 }

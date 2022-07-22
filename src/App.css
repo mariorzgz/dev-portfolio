@@ -21,6 +21,15 @@ h1, h2, h3{
   font-weight: 500;
 }
 
+h1{
+  font-size: 3em;
+}
+
+.emoji{
+  font-family: 'Noto Emoji', sans-serif;
+  font-size: 5em;
+}
+
 body{
   font-family: "cascadia";
   margin: 0;
@@ -36,6 +45,62 @@ a{
   color: initial;
 }
 
-.emoji{
-  font-family: 'Noto Emoji', sans-serif;
+
+.container{
+  padding: 2em 6em;
+}
+
+.d-flex{
+  height: 100%;
+  display: flex;
+}
+
+.padding{
+  padding: 3em 6em;
+}
+
+.padding-x{
+  padding: 0em 6em;
+}
+
+.padding-y{
+  padding: 3em 0em;
+}
+
+.align-items-center{
+  align-items: center;
+}
+
+.navbar{
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
+.width-50{
+  width: 50%;
+}
+
+.position-bottom{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+
+/* Intro */
+
+#intro{
+  height: 100vh;
+  position: relative;
+}
+
+#intro h1{
+  position: absolute;
 }
