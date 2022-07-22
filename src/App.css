@@ -92,15 +92,3 @@ a{
   white-space: nowrap;
   overflow: hidden;
 }
-
-
-/* Intro */
-
-#intro{
-  height: 100vh;
-  position: relative;
-}
-
-#intro h1{
-  position: absolute;
-}

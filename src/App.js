@@ -7,6 +7,9 @@ import WebPortfolio from "./components/WebPortfolio";
 import DesignPortfolio from "./components/DesignPortfolio";
 import Services from "./components/Services";
 import './App.css';
+import './Intro.css';
+import './Viewer.css';
+import './WebPortfolio.css';
 
 function App() {
   return (

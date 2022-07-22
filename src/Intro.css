@@ -1,0 +1,10 @@
+/* Intro */
+
+#intro{
+  height: 100vh;
+  position: relative;
+}
+
+#intro h1{
+  position: absolute;
+}

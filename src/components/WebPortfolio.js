@@ -1,53 +1,108 @@
-import React from "react";
+import React, { Component } from "react";
+import Viewer from "./Viewer";
 import { webprojects } from "../data";
 
-export default function WebPortfolio() {
-  return (
-    <section id="projects" className="body-font">
+class WebPortfolio extends Component{
 
-      <div>
-        <div>
-          <h2>
-            Web Portfolio
-          </h2>
-          <p>
+  constructor(props){
+    super(props);
+    this.state={
+      title: "title",
+      description: "description",
+      subtitle:"subtitle",
+      year: "year",
+      link:"link",
+      image:"image"
+    }
+    this.handleProjects = this.handleProjects.bind(this)
+  }
 
-            I've worked for 1 year in Spain and I've done an intensive Ruby on Rails bootcamp in Munich.
-            I also like to learn on my own about other coding languages and I have tons of personal projects.
+  handleProjects(e){
+    const description = e.target.getAttribute("data-description");
+    const title = e.target.getAttribute("data-title");
+    const subtitle = e.target.getAttribute("data-subtitle");
+    const year = e.target.getAttribute("data-year");
+    const link = e.target.getAttribute("data-link");
+    const image = e.target.getAttribute("data-image");
 
-          </p>
-        </div>
+    this.setState({
+      title: title,
+      description: description,
+      subtitle: subtitle,
+      year: year,
+      link: link,
+      image: image
+    });
+  }
 
-        <div className="flex flex-wrap -m-4">
-          {webprojects.map((project) => (
-            <a
-              target="_blank"
-              rel="noreferrer"
-              href={project.link}
-              key={project.image}
-              className="sm:w-1/2 w-100 p-4">
-              <div className="flex relative">
-                <img
-                  alt="gallery"
-                  className="absolute inset-0 w-full h-full object-cover object-top"
-                  src={project.image}
-                />
-                <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-orange-200 opacity-0 hover:opacity-100">
-                  <h2 className="tracking-widest text-sm title-font font-medium text-green-400 mb-1">
-                    {project.subtitle}
-                  </h2>
-                  <h1 className="title-font text-lg font-medium text-white mb-3">
-                    {project.title}
-                  </h1>
-                  <p className="leading-relaxed">{project.description}</p>
-                  <p className="py-2 leading-relaxed">{project.year}</p>
-                </div>
+  render(){
+
+    return (
+
+      <section id="projects" className="body-font">
+
+        <div className="d-flex">
+
+          <div className="width-50 padding">
+
+            <h2>
+              Web Portfolio
+            </h2>
+
+            <p>
+
+              I've worked for 1 year in Spain and I've done an intensive Ruby on Rails bootcamp in Munich.
+              <br></br>
+              <br></br>
+              I also like to learn on my own about other coding languages and I have tons of personal projects.
+
+            </p>
+
+          </div>
+
+          <div className="">
+
+          <Viewer
+            // title={this.state.title}
+            description={this.state.description}
+            subtitle={this.state.subtitle}
+          />
+
+            {webprojects.map((project) => (
+
+              <div>
+
+                <h2 className="">
+                        {project.title}
+                </h2>
+
+                <button onClick={this.handleProjects}
+                        id={project.title}
+                        data-title={project.title}
+                        data-description={project.description}
+                        data-subtitle={project.subtitle}
+                        data-year={project.year}
+                        data-link={project.link}
+                        data-image={project.image}
+                        >
+
+                {project.title}
+
+                </button>
+
               </div>
-            </a>
-          ))}
-        </div>
 
-      </div>
-    </section>
-  );
+            ))}
+          </div>
+
+        </div>
+      </section>
+    );
+
+
+  }
+
+
 }
+
+export default WebPortfolio
