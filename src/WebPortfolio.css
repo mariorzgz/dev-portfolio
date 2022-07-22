@@ -53,3 +53,13 @@
   height:100%;
   text-align:center;
 }
+
+.projects-cta{
+  background-color: #3619FD;
+  color: #FFF3E2;
+  position: absolute;
+  top: 45%;
+  right: 33%;
+  z-index: 5;
+  padding: 2em 3em;
+}

@@ -12,7 +12,8 @@ class WebPortfolio extends Component{
       subtitle:"subtitle",
       year: "year",
       link:"link",
-      image:"image"
+      image:"image",
+      isViewerOpen: false
     }
     this.handleProjects = this.handleProjects.bind(this)
   }
@@ -31,8 +32,15 @@ class WebPortfolio extends Component{
       subtitle: subtitle,
       year: year,
       link: link,
-      image: image
+      image: image,
+      isViewerOpen: true
     });
+
+    this.operViewer();
+  }
+
+  openViewer(){
+
   }
 
   render(){
@@ -40,7 +48,7 @@ class WebPortfolio extends Component{
     const size = 3
     const firstHalf = webprojects.slice(0,2).map(project => {
         return (
-          <img className="project slide"
+          <img className="project slide hvr-grow"
           key={project.title}
           src={project.image}
           alt={project.title}
@@ -58,7 +66,7 @@ class WebPortfolio extends Component{
 
     const secondHalf = webprojects.slice(2, webprojects.length).map(project => {
       return (
-        <img className="project slide"
+        <img className="project slide hvr-grow"
         key={project.title}
         src={project.image}
         alt={project.title}
@@ -88,7 +96,7 @@ class WebPortfolio extends Component{
 
             <p className="width-66">
 
-              I've worked for 1 year in Spain and I've done an intensive Ruby on Rails bootcamp in Munich.
+              I've worked for 1 year in <span id="spain" className="contrast">Spain</span> and I've done an intensive Ruby on Rails bootcamp in <span id="munich" className="contrast">Munich</span>.
               <br></br>
               <br></br>
               I also like to learn on my own about other coding languages and I have tons of personal projects.
@@ -105,6 +113,10 @@ class WebPortfolio extends Component{
           />
 
           <div className="web-projects slider">
+
+            <div className="projects-cta">
+              Click on the projects!
+            </div>
 
             <div className="d-flex slider-wrap animation-top">
 
