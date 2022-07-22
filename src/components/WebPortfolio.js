@@ -37,8 +37,8 @@ class WebPortfolio extends Component{
 
   render(){
 
-    const size = 6
-    const firstHalf = webprojects.map(project => {
+    const size = 3
+    const firstHalf = webprojects.slice(0,2).map(project => {
         return (
           <img className="project slide"
           key={project.title}
@@ -56,7 +56,7 @@ class WebPortfolio extends Component{
         )
     });
 
-    const secondHalf = webprojects.map(project => {
+    const secondHalf = webprojects.slice(2, webprojects.length).map(project => {
       return (
         <img className="project slide"
         key={project.title}

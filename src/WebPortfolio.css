@@ -12,7 +12,7 @@
 
 .web-projects .project{
   width: 500px;
-  margin-right: 10px;
+  padding: 0px 5px;
   margin-top: 10px;
 }
 
@@ -21,16 +21,16 @@
     transform: translateX(0);
   }
   100% {
-    transform: translateX(calc(-250px * 8));
+    transform: translateX(calc(-250px * 4 - 20px));
   }
 }
 
 .animation-top{
-  animation: scroll 40s linear infinite;
+  animation: scroll 20s linear infinite;
 }
 
 .animation-down{
-  animation: scroll 40s linear infinite reverse -15s;
+  animation: scroll 20s linear infinite reverse -7.5s;
 }
 
 .slider {
@@ -43,7 +43,7 @@
 
 .slider-wrap {
 		display: flex;
-		width: calc(500px * 10);
+		width: calc(500px * 4);
     height:100%;
 	}
 
