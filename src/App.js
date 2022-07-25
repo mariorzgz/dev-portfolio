@@ -6,10 +6,11 @@ import Navbar from "./components/Navbar";
 import WebPortfolio from "./components/WebPortfolio";
 import DesignPortfolio from "./components/DesignPortfolio";
 import Services from "./components/Services";
-import './App.css';
-import './Intro.css';
-import './Viewer.css';
-import './WebPortfolio.css';
+import './css/App.css';
+import './css/Intro.css';
+import './css/Viewer.css';
+import './css/WebPortfolio.css';
+import './css/DesignPortfolio.css';
 
 function App() {
   return (

@@ -1,0 +1,13 @@
+/* Design Portfolio */
+.design-projects{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.design-projects .project{
+  width: 300px;
+  box-shadow: 5px 5px #F05A24;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}

@@ -36,7 +36,7 @@ class WebPortfolio extends Component{
       isViewerOpen: true
     });
 
-    this.operViewer();
+    this.openViewer();
   }
 
   openViewer(){

@@ -15,7 +15,7 @@ export const designprojects = [
     role: ("Graphic Design", "Brand Identity"),
     description:
       "Brand identity for a local pottery artist.",
-    image: "./random-quote.gif",
+    image: "./design projects/catalina.png",
     link: "https://www.behance.net/gallery/125763687/cata-collage-ceramics-arquitecture-identity",
     year: "2021",
     gallery: ("","","",""),
@@ -26,8 +26,8 @@ export const designprojects = [
     role: ("Graphic Design", "Brand Identity"),
     description:
       "Brand identity for a local pottery artist.",
-    image: "./random-quote.gif",
-    link: "https://www.behance.net/gallery/125763687/cata-collage-ceramics-arquitecture-identity",
+    image: "./design projects/koma.png",
+    link: "https://www.behance.net/gallery/137093435/KOMA-IGOZE",
     year: "2021",
     gallery: ("","","",""),
     coauthor: "ONMI Design"
@@ -37,8 +37,8 @@ export const designprojects = [
     role: ("Graphic Design", "Brand Identity"),
     description:
       "Brand identity for a local pottery artist.",
-    image: "./random-quote.gif",
-    link: "https://www.behance.net/gallery/125763687/cata-collage-ceramics-arquitecture-identity",
+    image: "./design projects/akhasico.png",
+    link: "",
     year: "2021",
     gallery: ("","","",""),
     coauthor: "ONMI Design"
@@ -48,8 +48,8 @@ export const designprojects = [
     role: ("Graphic Design", "Brand Identity"),
     description:
       "Brand identity for a local pottery artist.",
-    image: "./random-quote.gif",
-    link: "https://www.behance.net/gallery/125763687/cata-collage-ceramics-arquitecture-identity",
+    image: "./design projects/ironsweat.png",
+    link: "",
     year: "2021",
     gallery: ("","","",""),
     coauthor: "ONMI Design"
@@ -59,8 +59,8 @@ export const designprojects = [
     role: ("Graphic Design", "Brand Identity"),
     description:
       "Brand identity for a local pottery artist.",
-    image: "./random-quote.gif",
-    link: "https://www.behance.net/gallery/125763687/cata-collage-ceramics-arquitecture-identity",
+    image: "./design projects/cp8.png",
+    link: "",
     year: "2021",
     gallery: ("","","",""),
     coauthor: "ONMI Design"
@@ -70,8 +70,8 @@ export const designprojects = [
     role: ("Graphic Design", "Brand Identity"),
     description:
       "Brand identity for a local pottery artist.",
-    image: "./random-quote.gif",
-    link: "https://www.behance.net/gallery/125763687/cata-collage-ceramics-arquitecture-identity",
+    image: "./design projects/rpb.png",
+    link: "https://www.behance.net/gallery/143925437/RPB-Sport-Legal",
     year: "2021",
     gallery: ("","","",""),
     coauthor: "ONMI Design"
