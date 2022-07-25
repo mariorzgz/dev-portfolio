@@ -45,7 +45,6 @@ class WebPortfolio extends Component{
 
   render(){
 
-    const size = 3
     const firstHalf = webprojects.slice(0,2).map(project => {
         return (
           <img className="project slide hvr-grow"
