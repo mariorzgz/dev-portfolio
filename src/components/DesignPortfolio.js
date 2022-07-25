@@ -53,7 +53,7 @@ class DesignPortfolio extends Component{
 
     const projects = designprojects.map(project => {
         return (
-          <img className="project"
+          <img className="project hvr-grow"
           key={project.title}
           src={project.image}
           alt={project.title}
@@ -73,7 +73,7 @@ class DesignPortfolio extends Component{
 
     return (
 
-      <section id="design-portolio" className="padding-y">
+      <section id="design-portolio">
 
         <div className="width-100 text-center">
 
@@ -94,7 +94,7 @@ class DesignPortfolio extends Component{
 
         </div>
 
-        <div className="d-flex design-projects">
+        <div className="padding-y d-flex design-projects">
 
           {projects}
 
