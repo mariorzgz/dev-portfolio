@@ -73,7 +73,7 @@ class DesignPortfolio extends Component{
 
     return (
 
-      <section id="design-portolio" className="padding-y">
+      <section id="design-portfolio" className="padding-y">
 
         <div className="width-100 text-center">
 

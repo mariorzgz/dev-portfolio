@@ -19,6 +19,8 @@ import './css/Viewer.css';
 import './css/WebPortfolio.css';
 import './css/DesignPortfolio.css';
 import './css/About.css';
+import './css/Contact.css';
+import './css/Services.css';
 // import { toBePartiallyChecked } from "@testing-library/jest-dom/dist/matchers";
 
 function App() {

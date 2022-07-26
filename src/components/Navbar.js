@@ -14,7 +14,7 @@ export default function Navbar() {
 
         <nav className="">
 
-          <a href="#projects" className="">
+          <a href="#projects" className="contrast">
             Contact
           </a>
 

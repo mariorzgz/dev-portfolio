@@ -9,11 +9,25 @@ export default function Services() {
 
         <div className="padding text-left">
 
-          <p>Web Development</p>
-          <p>React / Ruby on Rails / JavaScript / HTML / CSS / Wordpress / ...</p>
+          <p>Web Development:</p>
+
+          <ul className="">
+            <li>React</li>
+            <li>Ruby on Rails</li>
+            <li>JavaScript</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Wordpress</li>
+          </ul>
+
           <br></br>
-          <p>Graphic Design</p>
-          <p>Web Designer / UI/UX Designer / Creative Manager / Art Director</p>
+          <p>Graphic Design:</p>
+          <ul>
+            <li>Web Designer</li>
+            <li>UI/UX Designer</li>
+            <li>Creative Manager</li>
+            <li>Art Director</li>
+          </ul>
 
         </div>
 

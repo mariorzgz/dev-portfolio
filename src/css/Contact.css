@@ -1,0 +1,23 @@
+/* Contact */
+
+.email{
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2em;
+}
+
+.email a{
+  z-index: 2;
+  transform: rotate(-10deg);
+  margin-bottom: 1em;
+  text-decoration: underline;
+}
+
+.flechas-email{
+  position: absolute;
+  width: 50%;
+  z-index: 1;
+
+}

@@ -12,12 +12,31 @@
 
 .design-projects .project{
   width: 300px;
-  box-shadow: 5px 5px #F05A24;
+  box-shadow: 0px 0px #F05A24;
   margin-right: 10px;
   margin-bottom: 20px;
+}
+
+.design-projects .project:hover{
+  box-shadow: 5px 5px #F05A24;
 }
 
 
 .design-projects :nth-child(3){
   margin: 50px 0px;
+}
+
+#design-portfolio .emoji{
+  z-index: 5;
+  position: absolute;
+}
+
+#design-portfolio .first-emoji{
+  transform: rotate(-45deg);
+  right: 300px;
+}
+
+#design-portfolio .second-emoji{
+  transform: rotate(45deg) translateY(-300px);
+  left: 300px;
 }
