@@ -97,7 +97,7 @@ class WebPortfolio extends Component{
 
             <p className="width-66">
 
-              I've worked for 1 year in <span data-cursor="spain" id="spain" className="contrast">Spain</span> and I've done an intensive Ruby on Rails bootcamp in <span data-cursor="munich" id="munich" className="contrast">Munich</span>.
+              I've worked for 1 year in <span data-cursor="spain" id="spain" className="contrast">Spain</span> and I've done an intensive Ruby on Rails bootcamp in <span data-cursor="munich" id="munich" className="contrast">Munich</span> at Le Wagon.
 
               <br></br>
               <br></br>
