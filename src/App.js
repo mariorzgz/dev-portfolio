@@ -10,14 +10,15 @@ import DesignPortfolio from "./components/DesignPortfolio";
 import Services from "./components/Services";
 
 import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
+// import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 import './css/App.css';
 import './css/Intro.css';
 import './css/Viewer.css';
 import './css/WebPortfolio.css';
 import './css/DesignPortfolio.css';
-import { toBePartiallyChecked } from "@testing-library/jest-dom/dist/matchers";
+import './css/About.css';
+// import { toBePartiallyChecked } from "@testing-library/jest-dom/dist/matchers";
 
 function App() {
 

@@ -85,7 +85,7 @@ class WebPortfolio extends Component{
 
     return (
 
-      <section id="web-portolio" className="padding-y">
+      <section id="web-portfolio" className="padding-y">
 
         <div className="d-flex">
 

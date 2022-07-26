@@ -1,0 +1,44 @@
+/* About */
+.first-photo{
+  position: relative;
+  display: flex;
+}
+
+.first-photo .first-photo-img{
+  width: 400px;
+  z-index: 2;
+}
+
+.first-photo-text{
+  position: absolute;
+  top: -20px;
+  left: 420px;
+}
+
+.first-photo .flecha{
+  width: 200px;
+  position: absolute;
+  top: 60px;
+  left: 350px;
+  z-index: 3;
+}
+
+.second-photo{
+  position: relative;
+  display: flex;
+  transform: translate(0px, -165px);
+}
+
+.second-photo .second-photo-img{
+  transform: translate(290px);
+  position: relative;
+  width: 450px;
+  z-index: 1;
+}
+
+.second-photo-text{
+  position: absolute;
+  bottom: -20px;
+  right: 400px;
+  text-align: right;
+}

@@ -43,6 +43,7 @@ h1, h2, h3{
 
 h1, h2{
   font-size: 2.4em;
+  margin-top: 0px;
 }
 
 .contrast{
@@ -56,7 +57,7 @@ h1, h2{
 
 body{
   font-family: "cascadia";
-  font-size: 1.2em;
+  font-size: 1.4em;
   margin: 0;
   padding: 0;
   cursor: none;
@@ -93,6 +94,10 @@ a{
   padding: 3em 0em;
 }
 
+.padding-top{
+  padding-top: 3em;
+}
+
 .align-items-center{
   align-items: center;
 }
@@ -127,6 +132,13 @@ a{
   text-align: center;
 }
 
+.text-right{
+  text-align: right;
+}
+
+.text-left{
+  text-align: left;
+}
 
 .position-bottom{
   position: absolute;
@@ -157,8 +169,8 @@ a{
 
 .cursor {
   border-radius: 50%;
-  width: 32px;
-  height: 32px;
+  width: 35px;
+  height: 35px;
   background-color: white;
   mix-blend-mode: difference;
   position: fixed;
