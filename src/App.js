@@ -8,6 +8,7 @@ import Navbar from "./components/Navbar";
 import WebPortfolio from "./components/WebPortfolio";
 import DesignPortfolio from "./components/DesignPortfolio";
 import Services from "./components/Services";
+import Footer from "./components/Footer";
 
 import { gsap } from "gsap";
 // import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -128,6 +129,7 @@ function App() {
       <About />
       <Services />
       <Contact />
+      <Footer />
     </main>
   );
 

@@ -94,11 +94,15 @@ class DesignPortfolio extends Component{
 
         </div>
 
+        <div className="emoji contrast first-emoji">😲</div>
+
         <div className="padding-y d-flex design-projects">
 
           {projects}
 
         </div>
+
+        <div className="emoji contrast second-emoji">😊</div>
 
       </section>
     );

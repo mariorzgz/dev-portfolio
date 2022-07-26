@@ -72,7 +72,6 @@ a{
   color: initial;
 }
 
-
 .container{
   padding: 2em 6em;
 }
@@ -100,6 +99,14 @@ a{
 
 .align-items-center{
   align-items: center;
+}
+
+.align-items-end{
+  align-items: flex-end;
+}
+
+.justify-content-between{
+  justify-content: space-between;
 }
 
 .navbar{

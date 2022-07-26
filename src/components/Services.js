@@ -1,5 +1,4 @@
 import React from "react";
-import { skills } from "../data";
 
 export default function Services() {
   return (
@@ -12,7 +11,7 @@ export default function Services() {
 
           <p>Web Development</p>
           <p>React / Ruby on Rails / JavaScript / HTML / CSS / Wordpress / ...</p>
-
+          <br></br>
           <p>Graphic Design</p>
           <p>Web Designer / UI/UX Designer / Creative Manager / Art Director</p>
 
