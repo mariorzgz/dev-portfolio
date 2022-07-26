@@ -53,7 +53,7 @@ class DesignPortfolio extends Component{
 
     const projects = designprojects.map(project => {
         return (
-          <img className="project hvr-grow"
+          <img className="project hvr-grow" data-cursor="hover"
           key={project.title}
           src={project.image}
           alt={project.title}

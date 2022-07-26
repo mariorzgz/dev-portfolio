@@ -48,6 +48,7 @@ class WebPortfolio extends Component{
     const firstHalf = webprojects.slice(0,2).map(project => {
         return (
           <img className="project slide hvr-grow"
+          data-cursor="hover"
           key={project.title}
           src={project.image}
           alt={project.title}
@@ -66,6 +67,7 @@ class WebPortfolio extends Component{
     const secondHalf = webprojects.slice(2, webprojects.length).map(project => {
       return (
         <img className="project slide hvr-grow"
+        data-cursor="hover"
         key={project.title}
         src={project.image}
         alt={project.title}
@@ -95,7 +97,8 @@ class WebPortfolio extends Component{
 
             <p className="width-66">
 
-              I've worked for 1 year in <span id="spain" className="contrast">Spain</span> and I've done an intensive Ruby on Rails bootcamp in <span id="munich" className="contrast">Munich</span>.
+              I've worked for 1 year in <span data-cursor="spain" id="spain" className="contrast">Spain</span> and I've done an intensive Ruby on Rails bootcamp in <span data-cursor="munich" id="munich" className="contrast">Munich</span>.
+
               <br></br>
               <br></br>
               I also like to learn on my own about other coding languages and I have tons of personal projects.

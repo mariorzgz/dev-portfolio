@@ -59,6 +59,7 @@ body{
   font-size: 1.2em;
   margin: 0;
   padding: 0;
+  cursor: none;
 }
 
 .body-bg{
@@ -150,4 +151,29 @@ a{
   -webkit-transform: scale(1.05);
   transform: scale(1.05);
   z-index: 1;
+}
+
+/* Cursor */
+
+.cursor {
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  background-color: white;
+  mix-blend-mode: difference;
+  position: fixed;
+  top: 0;
+  left: 0;
+  will-change: transform;
+  pointer-events: none;
+  z-index: 20;
+  font-family: 'Noto Emoji', sans-serif;
+  font-weight: bold;
+  color: black;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  -webkit-font-smoothing: subpixel-antialiased;
+  backface-visibility: hidden;
 }

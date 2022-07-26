@@ -13,7 +13,6 @@
 .web-projects .project{
   width: 600px;
   padding: 10px 5px;
-  cursor: pointer;
 }
 
 @keyframes scroll{
