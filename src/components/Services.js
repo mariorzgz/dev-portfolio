@@ -7,26 +7,26 @@ export default function Services() {
 
         <h2>Services</h2>
 
-        <div className="padding text-left">
+        <div className="padding text-left m-0-padding">
 
           <p>Web Development:</p>
 
           <ul className="">
-            <li>React</li>
-            <li>Ruby on Rails</li>
-            <li>JavaScript</li>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>Wordpress</li>
+            <li className="text-center">React</li>
+            <li className="text-center">Ruby on Rails</li>
+            <li className="text-center">JavaScript</li>
+            <li className="text-center">HTML</li>
+            <li className="text-center">CSS</li>
+            <li className="text-center">Wordpress</li>
           </ul>
 
           <br></br>
           <p>Graphic Design:</p>
           <ul>
-            <li>Web Designer</li>
-            <li>UI/UX Designer</li>
-            <li>Creative Manager</li>
-            <li>Art Director</li>
+            <li className="text-center">Web Designer</li>
+            <li className="text-center">UI/UX Designer</li>
+            <li className="text-center">Creative Manager</li>
+            <li className="text-center">Art Director</li>
           </ul>
 
         </div>

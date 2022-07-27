@@ -61,3 +61,7 @@
   z-index: 5;
   padding: 2em 3em;
 }
+
+.web-projects-mobile{
+  display: none;
+}

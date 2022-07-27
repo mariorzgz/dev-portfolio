@@ -33,6 +33,19 @@ class WebPortfolio extends Component{
 
   render(){
 
+    const allProjects = webprojects.map(project => {
+      return(
+        <img className="project project-mobile"
+          key={project.id}
+          src={project.image}
+          alt={project.title}
+          onClick={this.handleProjects}
+          id={project.id}
+          data-title={project.title}
+          ></img>
+      )
+    })
+
     const firstHalf = webprojects.slice(0,2).map(project => {
         return (
           <img className="project slide hvr-grow"
@@ -107,6 +120,12 @@ class WebPortfolio extends Component{
               {secondHalf}{secondHalf}
 
             </div>
+
+          </div>
+
+          <div className="web-projects-mobile">
+
+            {allProjects}
 
           </div>
 
