@@ -7,38 +7,17 @@ class DesignPortfolio extends Component{
   constructor(props){
     super(props);
     this.state={
-      title: "",
-      description: "",
-      role:"",
-      year: "",
-      link: "",
-      image: "",
-      galler: "",
-      coauthor: "",
+      id: 0,
       isViewerOpen: false
     }
     this.handleProjects = this.handleProjects.bind(this)
   }
 
   handleProjects(e){
-    const description = e.target.getAttribute("data-description");
-    const title = e.target.getAttribute("data-title");
-    const role = e.target.getAttribute("data-role");
-    const year = e.target.getAttribute("data-year");
-    const link = e.target.getAttribute("data-link");
-    const image = e.target.getAttribute("data-image");
-    const gallery = e.target.getAttribute("data-gallery");
-    const coauthor = e.target.getAttribute("data-coauthor");
+    const id = e.target.getAttribute("id");
 
     this.setState({
-      title: title,
-      description: description,
-      role: role,
-      year: year,
-      link: link,
-      image: image,
-      gallery: gallery,
-      coauthor: coauthor,
+      id: id,
       isViewerOpen: true
     });
 
@@ -54,19 +33,11 @@ class DesignPortfolio extends Component{
     const projects = designprojects.map(project => {
         return (
           <img className="project hvr-grow" data-cursor="hover"
-          key={project.title}
+          key={project.id}
+          id={project.id}
           src={project.image}
           alt={project.title}
           onClick={this.handleProjects}
-          id={project.title}
-          data-title={project.title}
-          data-description={project.description}
-          data-role={project.role}
-          data-year={project.year}
-          data-link={project.link}
-          data-image={project.image}
-          data-gallery={project.gallery}
-          data-coauthor={project.coauthor}
           ></img>
         )
     });
@@ -85,12 +56,9 @@ class DesignPortfolio extends Component{
 
         <div className="d-flex">
 
-          <Viewer
-            title={this.state.title}
-            description={this.state.description}
-            subtitle={this.state.subtitle}
-            role={this.state.role}
-          />
+          { <Viewer
+            id={this.state.id}
+          /> }
 
         </div>
 

@@ -6,7 +6,7 @@ export default function Navbar() {
 
         <div className="">
 
-          <a href="#about" className="">
+          <a href="#intro" className="">
             Mario Rodríguez
           </a>
 
@@ -14,7 +14,7 @@ export default function Navbar() {
 
         <nav className="">
 
-          <a href="#projects" className="contrast">
+          <a href="#contact" className="contrast">
             Contact
           </a>
 

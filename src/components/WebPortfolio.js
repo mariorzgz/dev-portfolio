@@ -7,32 +7,17 @@ class WebPortfolio extends Component{
   constructor(props){
     super(props);
     this.state={
-      title: "title",
-      description: "description",
-      subtitle:"subtitle",
-      year: "year",
-      link:"link",
-      image:"image",
+      id: 0,
       isViewerOpen: false
     }
     this.handleProjects = this.handleProjects.bind(this)
   }
 
   handleProjects(e){
-    const description = e.target.getAttribute("data-description");
-    const title = e.target.getAttribute("data-title");
-    const subtitle = e.target.getAttribute("data-subtitle");
-    const year = e.target.getAttribute("data-year");
-    const link = e.target.getAttribute("data-link");
-    const image = e.target.getAttribute("data-image");
+    const id = e.target.getAttribute("id");
 
     this.setState({
-      title: title,
-      description: description,
-      subtitle: subtitle,
-      year: year,
-      link: link,
-      image: image,
+      id: id,
       isViewerOpen: true
     });
 
@@ -40,7 +25,10 @@ class WebPortfolio extends Component{
   }
 
   openViewer(){
-
+    const viewer = document.getElementById("viewer");
+    const body = document.querySelector("body");
+    viewer.classList.add("open-viewer");
+    body.classList.add("no-scroll")
   }
 
   render(){
@@ -49,17 +37,12 @@ class WebPortfolio extends Component{
         return (
           <img className="project slide hvr-grow"
           data-cursor="hover"
-          key={project.title}
+          key={project.id}
           src={project.image}
           alt={project.title}
           onClick={this.handleProjects}
-          id={project.title}
+          id={project.id}
           data-title={project.title}
-          data-description={project.description}
-          data-subtitle={project.subtitle}
-          data-year={project.year}
-          data-link={project.link}
-          data-image={project.image}
           ></img>
         )
     });
@@ -68,17 +51,12 @@ class WebPortfolio extends Component{
       return (
         <img className="project slide hvr-grow"
         data-cursor="hover"
-        key={project.title}
+        key={project.id}
         src={project.image}
         alt={project.title}
         onClick={this.handleProjects}
-        id={project.title}
+        id={project.id}
         data-title={project.title}
-        data-description={project.description}
-        data-subtitle={project.subtitle}
-        data-year={project.year}
-        data-link={project.link}
-        data-image={project.image}
         ></img>
       )
   });
@@ -109,9 +87,7 @@ class WebPortfolio extends Component{
 
 
           <Viewer
-            title={this.state.title}
-            description={this.state.description}
-            subtitle={this.state.subtitle}
+            id={this.state.id}
           />
 
           <div className="web-projects slider">

@@ -1,43 +1,54 @@
 /* Viewer */
 #viewer{
   display: none;
-}
-
-.popup-box {
   position: fixed;
-  background: #00000050;
+  background: #3619FD;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
+  color: white;
+  height: 100%;
   top: 0;
   left: 0;
+  z-index: 11;
 }
 
-.box {
-  position: relative;
-  width: 70%;
-  margin: 0 auto;
-  height: auto;
-  max-height: 70vh;
-  margin-top: calc(100vh - 85vh - 20px);
-  background: #fff;
-  border-radius: 4px;
-  padding: 20px;
-  border: 1px solid #999;
-  overflow: auto;
+.box{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+#viewer h2, #viewer p, #viewer a{
+  color: white;
+  margin: .2em 0em;
+}
+
+#viewer.open-viewer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .close-icon {
-  content: 'x';
-  cursor: pointer;
-  position: fixed;
-  right: calc(15% - 30px);
-  top: calc(100vh - 85vh - 33px);
-  background: #ededed;
-  width: 25px;
-  height: 25px;
-  border-radius: 50%;
-  line-height: 20px;
-  text-align: center;
-  border: 1px solid #999;
-  font-size: 20px;
+  position: absolute;
+  text-align: right;
+  background-color: transparent;
+  color: white;
+  top: 2em;
+  right: 6em;
+}
+
+#viewer .skills{
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-around;
+}
+
+#viewer .skills li{
+  border: 3px solid white;
+}
+
+.project-attributes{
+  display: flex;
+  padding-bottom: 1em;
 }
