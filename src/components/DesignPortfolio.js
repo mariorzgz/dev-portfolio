@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Viewer from "./Viewer";
+import DesignViewer from "./DesignViewer";
 import { designprojects } from "../data";
 
 class DesignPortfolio extends Component{
@@ -25,7 +25,10 @@ class DesignPortfolio extends Component{
   }
 
   openViewer(){
-
+    const viewer = document.getElementById("design-viewer");
+    const body = document.querySelector("body");
+    viewer.classList.add("open-viewer");
+    body.classList.add("no-scroll");
   }
 
   render(){
@@ -54,13 +57,10 @@ class DesignPortfolio extends Component{
 
         </div>
 
-        <div className="d-flex">
-
-          { <Viewer
-            id={this.state.id}
-          /> }
-
-        </div>
+        <DesignViewer
+          id={this.state.id}
+          type="design"
+        />
 
         <div className="emoji contrast first-emoji">😲</div>
 

@@ -24,7 +24,7 @@ class Viewer extends React.Component{
     });
 
     return(
-      <div id="viewer">
+      <div id="viewer" className={this.props.type}>
 
         <div className="box">
 
@@ -41,7 +41,13 @@ class Viewer extends React.Component{
             </div>
 
             <div className="width-66 padding-x text-right">
-              <img src={project.image} alt={project.title}></img>
+              <video className=""
+                alt={project.title}
+                src={project.video}
+                autoPlay muted loop>
+                <source type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
             </div>
 
           </div>
@@ -50,12 +56,12 @@ class Viewer extends React.Component{
 
             <p>Year: {project.year}</p>
 
-
             <ul className="skills justify-content-around">
               {skills}
             </ul>
-
-            <a target="_blank" rel="noreferrer" href={project.link}>Visit page</a>
+            {project.link.length > 0 &&
+              <a target="_blank" rel="noreferrer" href={project.link}>Visit page</a>
+            }
 
           </div>
 

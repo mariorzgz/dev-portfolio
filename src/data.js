@@ -80,7 +80,7 @@ export const webprojects = [
     skills: ["React"],
     description:
       "My first app in React. It started as an exercise for the freecodecamp Frontend Development Libraries course. You get a random color and a random font for each quote, making fun and dumb combinations.",
-    image: "./web projects/random-quote.gif",
+    video: "./web projects/random quote machine.mp4",
     link: "https://mariorzgz.github.io/random-quote-machine/",
     year: "2022"
   },
@@ -90,28 +90,48 @@ export const webprojects = [
     skills: ["Ruby on Rails", "Bootstrap", "SQL"],
     description:
       "Final project for Le Wagon Ruby on Rails bootcamp. It's an app for trading, sharing and showing your personal style. People can upload photos, tag items and then trade those items. We did it in two weeks and I was the dev and team leader.",
-    image: "./web projects/refresh.gif",
+    video: "./web projects/refresh.mp4",
     link: "https://www.refresh-your-style.com/",
     year: "2022"
   },
   {
     id: 2,
-    title: "Tribu",
-    skills: ["Wordpress"],
-    description:
-      "Website for a gym I made while I was working at ONMI Design, a creative agency from Spain. It's a one page site with multiple svg animations and microinteractions with the user.",
-    image: "./web projects/tribu.gif",
-    link: "https://tribu.center/",
-    year: "2020"
-  },
-  {
-    id: 3,
     title: "Cuchillo Amigo",
     skills: ["Wordpress"],
     description:
       "Final project for my two years Interactive Media Degree in Spain. It's a vegan recipes blog with entries, categories and photos. It's the first website I've built.",
-    image: "./web projects/cuchillo-amigo.gif",
+    video: "./web projects/cuchillo amigo.mp4",
     link: "https://cuchilloamigo.com/",
     year: "2020"
   },
+  {
+    id: 3,
+    title: "Tribu",
+    skills: ["Wordpress"],
+    description:
+      "Website for a gym I made while I was working at ONMI Design, a creative agency from Spain. It's a one page site with multiple svg animations and microinteractions with the user.",
+    video: "./web projects/tribu.mp4",
+    link: "https://tribu.center/",
+    year: "2021"
+  },
+  {
+    id: 4,
+    title: "KOMA",
+    skills: ["Wordpress"],
+    description:
+      "Website for a Chef at Home service that I made while working at ONMI Design. It's a one page with lots of photos, scrolling effects and a reservation calendar.",
+    video: "./web projects/koma.mp4",
+    link: "",
+    year: "2021"
+  },
+  {
+    id: 5,
+    title: "NOW Energy",
+    skills: ["Wordpress"],
+    description:
+      "Website for a Solar Energy company that I made while working at ONMI Design. It has multiple pages with lots of information and different target audiences: homes, small companies and industries.",
+    video: "./web projects/now energy.mp4",
+    link: "",
+    year: "2021"
+  }
 ];

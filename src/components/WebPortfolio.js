@@ -28,49 +28,55 @@ class WebPortfolio extends Component{
     const viewer = document.getElementById("viewer");
     const body = document.querySelector("body");
     viewer.classList.add("open-viewer");
-    body.classList.add("no-scroll")
+    body.classList.add("no-scroll");
   }
 
   render(){
 
     const allProjects = webprojects.map(project => {
       return(
-        <img className="project project-mobile"
+        <video className="project project-mobile"
           key={project.id}
-          src={project.image}
           alt={project.title}
           onClick={this.handleProjects}
           id={project.id}
           data-title={project.title}
-          ></img>
+          autoPlay muted loop>
+          <source src={project.video} type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
       )
     })
 
-    const firstHalf = webprojects.slice(0,2).map(project => {
+    const firstHalf = webprojects.slice(0,3).map(project => {
         return (
-          <img className="project slide hvr-grow"
+          <video className="project project-desktop hvr-grow"
           data-cursor="hover"
           key={project.id}
-          src={project.image}
           alt={project.title}
           onClick={this.handleProjects}
           id={project.id}
           data-title={project.title}
-          ></img>
+          autoPlay muted loop>
+          <source src={project.video} type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
         )
     });
 
-    const secondHalf = webprojects.slice(2, webprojects.length).map(project => {
+    const secondHalf = webprojects.slice(3, webprojects.length).map(project => {
       return (
-        <img className="project slide hvr-grow"
+        <video className="project project-desktop hvr-grow"
         data-cursor="hover"
         key={project.id}
-        src={project.image}
         alt={project.title}
         onClick={this.handleProjects}
         id={project.id}
         data-title={project.title}
-        ></img>
+        autoPlay muted loop>
+        <source src={project.video} type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
       )
   });
 
@@ -101,6 +107,7 @@ class WebPortfolio extends Component{
 
           <Viewer
             id={this.state.id}
+            type="web"
           />
 
           <div className="web-projects slider">

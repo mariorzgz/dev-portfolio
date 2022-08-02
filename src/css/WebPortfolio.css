@@ -20,16 +20,16 @@
     transform: translateX(0);
   }
   100% {
-    transform: translateX(calc(-300px * 4 - 20px));
+    transform: translateX(calc(-300px * 6 - 30px));
   }
 }
 
 .animation-top{
-  animation: scroll 20s linear infinite;
+  animation: scroll 60s linear infinite;
 }
 
 .animation-down{
-  animation: scroll 20s linear infinite reverse -7.5s;
+  animation: scroll 60s linear infinite reverse -7.5s;
 }
 
 .slider {
@@ -42,7 +42,7 @@
 
 .slider-wrap {
 		display: flex;
-		width: calc(600px * 4);
+		width: calc(600px * 6);
     height:100%;
 	}
 

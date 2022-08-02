@@ -1,5 +1,6 @@
 /* Viewer */
-#viewer{
+
+#viewer, #design-viewer{
   display: none;
   position: fixed;
   background: #3619FD;
@@ -18,12 +19,13 @@
   height: 100%;
 }
 
-#viewer h2, #viewer p, #viewer a{
+#viewer h2, #viewer p, #viewer a,
+#design-viewer h2, #design-viewer p, #design-viewer a{
   color: white;
   margin: .2em 0em;
 }
 
-#viewer.open-viewer{
+#viewer.open-viewer, #design-viewer.open-viewer{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -38,13 +40,15 @@
   right: 6em;
 }
 
-#viewer .skills{
+#viewer .skills,
+#design-viewer .skills{
   flex-grow: 1;
   display: flex;
   justify-content: space-around;
 }
 
-#viewer .skills li{
+#viewer .skills li,
+#design-viewer .skills li{
   border: 3px solid white;
 }
 
