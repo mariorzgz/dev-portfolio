@@ -11,19 +11,20 @@
 }
 
 .design-projects .project{
-  width: 300px;
   box-shadow: 0px 0px #F05A24;
   margin-right: 10px;
   margin-bottom: 20px;
+  border-radius: 50%;
 }
 
 .design-projects .project:hover{
   box-shadow: 5px 5px #F05A24;
+  border-radius: 0%;
 }
 
 
 .design-projects :nth-child(3){
-  margin: 50px 0px;
+  margin: 80px 0px;
 }
 
 #design-portfolio .emoji{

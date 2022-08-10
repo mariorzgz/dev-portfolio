@@ -35,13 +35,28 @@ class DesignPortfolio extends Component{
 
     const projects = designprojects.map(project => {
         return (
-          <img className="project hvr-grow" data-cursor="hover"
+          <div className="project hvr-grow" data-cursor="hover"
+          key={project.id}
+          id={project.id}
+          style={{
+            backgroundImage: `url(${project.image})`,
+            backgroundPosition: 'center',
+            backgroundSize: 'cover',
+            backgroundRepeat: 'no-repeat',
+            height: "300px",
+            width: "300px"
+          }}
+          alt={project.title}
+          onClick={this.handleProjects}>
+          </div>
+
+          /* <img className="project hvr-grow" data-cursor="hover"
           key={project.id}
           id={project.id}
           src={project.image}
           alt={project.title}
           onClick={this.handleProjects}
-          ></img>
+          ></img> */
         )
     });
 
