@@ -215,3 +215,48 @@ a{
   -webkit-font-smoothing: subpixel-antialiased;
   backface-visibility: hidden;
 }
+
+/* Cookie Consent */
+
+.CookieConsent{
+  background: rgb(54, 25, 253);
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  left: 35%;
+  position: fixed;
+  width: 30%;
+  bottom: 33%;
+  padding: 1em;
+  border: 5px solid black;
+  box-shadow: 5px 5px black;
+  z-index: 999;
+  animation: cookies infinite linear 4s;
+}
+
+#rcc-confirm-button{
+  font-size: 0.9em;
+  background: white;
+  border: 2px solid white;
+  border-radius: 50px;
+  box-shadow: none;
+  color: rgb(54, 25, 253);
+  cursor: pointer;
+  flex: 0 0 auto;
+  padding: 10px 15px;
+  margin-top: 30px;
+  font-family: "cascadia";
+}
+
+#rcc-confirm-button:hover{
+  background: rgb(54, 25, 253);
+  color: white;
+  border: 2px solid white;
+}
+
+@keyframes cookies {
+  0%    {bottom: 33%}
+  50%   {bottom: 36%}
+  100%  {bottom: 33%}
+}

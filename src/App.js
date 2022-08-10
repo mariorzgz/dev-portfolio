@@ -10,6 +10,9 @@ import DesignPortfolio from "./components/DesignPortfolio";
 import Services from "./components/Services";
 import Footer from "./components/Footer";
 
+import CookieConsent from "react-cookie-consent";
+
+
 import { gsap } from "gsap";
 // import { ScrollTrigger } from "gsap/ScrollTrigger";
 
@@ -125,6 +128,17 @@ function App() {
   return (
     <main className="App body-bg" ref={ref}>
       <div className="cursor">🙂</div>
+
+      <CookieConsent
+        location="none"
+        buttonText="I understand"
+        cookieName="CookieConsent"
+        disableStyles={true}
+        expires={150}
+      >
+        This website uses basic cookies to enhance the user experience.{" "}
+      </CookieConsent>
+
       <Navbar />
       <Intro />
       <WebPortfolio />

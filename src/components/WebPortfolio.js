@@ -112,9 +112,9 @@ class WebPortfolio extends Component{
 
           <div className="web-projects slider">
 
-            <div className="projects-cta">
+            {/* <div className="projects-cta">
               Click on the projects!
-            </div>
+            </div> */}
 
             <div className="d-flex slider-wrap animation-top">
 
