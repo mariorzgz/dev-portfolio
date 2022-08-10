@@ -19,7 +19,13 @@ class DesignViewer extends React.Component{
 
     const gallery = project.gallery.map(image => {
       return(
-      <li key={image}>{image}</li>
+      <li key={image}>
+        <img className="" style={{width: "700px"}}
+        key={image}
+        src={image}
+        alt={image}
+        ></img>
+      </li>
       )
     });
 
@@ -34,25 +40,30 @@ class DesignViewer extends React.Component{
 
             <div className="width-33">
 
-
               <h2 id="title">{project.title}</h2>
               <p id="description">{project.description}</p>
 
             </div>
 
+            <div className="gallery">
+              {gallery}
+            </div>
+
+          </div>
+
           <div className="padding-x align-items-center project-attributes">
 
             <p>Year: {project.year}</p>
 
+            <ul className="skills justify-content-around">
+              <li>aappp</li>
+              <li>ooouu</li>
+            </ul>
             {project.link.length > 0 &&
               <a target="_blank" rel="noreferrer" href={project.link}>Visit page</a>
             }
 
           </div>
-
-          </div>
-
-
 
         </div>
 

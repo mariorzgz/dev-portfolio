@@ -37,6 +37,10 @@
   background: #F05A24;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 h1, h2, h3{
   color: #F05A24;
   font-family: "cocogoose", Verdana, sans-serif;

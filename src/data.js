@@ -8,7 +8,10 @@ export const designprojects = [
     image: "design%20projects/catalina.png",
     link: "https://www.behance.net/gallery/125763687/cata-collage-ceramics-arquitecture-identity",
     year: "2021",
-    gallery: ["","","",""],
+    gallery: ["./design projects/catarsis catalina/1.gif",
+              "./design projects/catarsis catalina/2.png",
+              "./design projects/catarsis catalina/3.png",
+              "./design projects/catarsis catalina/4.png"],
     coauthor: "La Perra Gorda"
   },
   {

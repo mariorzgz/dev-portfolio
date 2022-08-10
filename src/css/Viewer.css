@@ -56,3 +56,38 @@
   display: flex;
   padding-bottom: 1em;
 }
+
+/* Design Viewer */
+
+#design-viewer .nav{
+  position: fixed;
+  right: 0;
+  top: 0;
+}
+
+#design-viewer .gallery{
+  width: 100vw;
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#design-viewer .gallery li{
+  border: none;
+}
+
+.gallery li:first-child{
+  margin-top: 10%;
+}
+
+#design-viewer .project-header{
+  display: flex;
+  flex-direction: row;
+}
+
+#design-viewer .project-attributes{
+
+}
