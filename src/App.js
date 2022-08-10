@@ -29,11 +29,11 @@ import './css/MediaQueries.css';
 
 function App() {
 
-  const ref = useRef(null);
+  const body = useRef(null);
 
   useEffect(() => {
 
-    const element = ref.current;
+    const element = body.current;
 
     const cursor = element.querySelector(".cursor");
 
@@ -126,7 +126,7 @@ function App() {
   });
 
   return (
-    <main className="App body-bg" ref={ref}>
+    <main className="App body-bg" ref={body}>
       <div className="cursor">🙂</div>
 
       <CookieConsent
