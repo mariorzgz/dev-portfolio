@@ -31,7 +31,7 @@ export default function About() {
             <img
               className="first-photo-img"
               alt="That's me in Munich Pride '22"
-              src="foto1.png">
+              src="foto1.webp">
             </img>
 
             <img className="flecha" src="flecha.svg" alt="flecha"></img>
@@ -51,7 +51,7 @@ export default function About() {
             <img
               className="second-photo-img"
               alt="A sunny day on the Olympiapark eating one bretzel, one schnitzel with french fries, one potato with quark and two beers"
-              src="foto2.png">
+              src="foto2.webp">
             </img>
 
           </div>
