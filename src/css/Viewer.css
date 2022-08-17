@@ -38,6 +38,7 @@
   color: white;
   top: 2em;
   right: 6em;
+  z-index: 6;
 }
 
 #viewer .skills,
@@ -55,4 +56,63 @@
 .project-attributes{
   display: flex;
   padding-bottom: 1em;
+}
+
+/* Design Viewer */
+
+#design-viewer .nav{
+  position: fixed;
+  right: 0;
+  top: 0;
+}
+
+#design-viewer .gallery{
+  width: 100vw;
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  z-index: 5;
+}
+
+#design-viewer .gallery li{
+  border: none;
+}
+
+#design-viewer .project-header{
+  display: flex;
+  flex-direction: row;
+}
+
+#design-viewer .project-data{
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+  background-color: transparent;
+  color: white;
+  top: 2em;
+  left: 2em;
+  z-index: 4;
+}
+
+#design-viewer .project-link{
+  position: absolute;
+  background-color: transparent;
+  color: white;
+  text-align: right;
+  bottom: 2em;
+  right: 3em;
+  z-index: 6;
+  border: 3px solid white;
+  border-radius: 50px;
+  padding: 5px 10px;
+}
+
+#design-viewer .project-link:hover{
+  color: #3619FD;
+  background-color: white;
 }
