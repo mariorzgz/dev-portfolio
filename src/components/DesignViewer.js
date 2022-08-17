@@ -36,32 +36,24 @@ class DesignViewer extends React.Component{
 
           <p id="close" className="close-icon" onClick={this.closeViewer}>✕</p>
 
-          <div className="d-flex align-items-center padding-x">
+          {project.link.length > 0 &&
+              <a className="project-link" target="_blank" rel="noreferrer" href={project.link}>Visit link</a>
+          }
 
-            <div className="width-33">
-
-              <h2 id="title">{project.title}</h2>
-              <p id="description">{project.description}</p>
-
-            </div>
-
-            <div className="gallery">
-              {gallery}
-            </div>
-
+          <div className="gallery">
+            {gallery}
           </div>
 
-          <div className="padding-x align-items-center project-attributes">
+          <div className="project-data width-33">
 
-            <p>Year: {project.year}</p>
-
-            <ul className="skills justify-content-around">
-              <li>aappp</li>
-              <li>ooouu</li>
-            </ul>
-            {project.link.length > 0 &&
-              <a target="_blank" rel="noreferrer" href={project.link}>Visit page</a>
-            }
+            <h2 id="title">{project.title}</h2>
+            <div className="width-50">
+              <p id="description">{project.description}</p>
+            </div>
+            <div>
+              <p>Coauthor: {project.coauthor}</p>
+              <p>Year: {project.year}</p>
+            </div>
 
           </div>
 

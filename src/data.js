@@ -2,7 +2,6 @@ export const designprojects = [
   {
     id: 0,
     title: "Catarsis Catalina",
-    role: ["Graphic Design", "Brand Identity"],
     description:
       "Brand identity for a local pottery artist. As an architect and a collage illustrator too, we managed to incorporate this versatility with an open color palette and a fun use of the brand.",
     image: "design%20projects/catalina.png",
@@ -25,9 +24,8 @@ export const designprojects = [
   {
     id: 1,
     title: "KOMA",
-    role: ["Graphic Design", "Brand Identity"],
     description:
-      "Brand identity for a multisensorial and multidimensional Chef at Home service. KOMA is a one moment experience, guided by Japanese contemporary fusion food.",
+      "Brand identity and art direction for a multisensorial and multidimensional Chef at Home service. KOMA is a one moment experience, guided by Japanese contemporary fusion food.",
     image: "design%20projects/koma.png",
     link: "https://www.behance.net/gallery/137093435/KOMA-IGOZE",
     year: "2021",
@@ -45,7 +43,6 @@ export const designprojects = [
   {
     id: 2,
     title: "AKHÁSICO",
-    role: ["Graphic Design", "Brand Identity"],
     description:
       "Brand identity for a zen training center. It includes a whole storytelling of the space, along with the company values: courage, strength, temperance, determination and growth.",
     image: "design%20projects/akhasico.png",
@@ -70,7 +67,6 @@ export const designprojects = [
   {
     id: 3,
     title: "IRONSWEAT",
-    role: ["Graphic Design", "Brand Identity"],
     description:
       "Brand identity for a gym based on the body transformation. We used the heat and energy of the bodies in movement for the colors and storytelling of the company.",
     image: "design%20projects/ironsweat.png",
@@ -95,7 +91,6 @@ export const designprojects = [
   {
     id: 4,
     title: "CP8",
-    role: ["Graphic Design", "Brand Identity"],
     description:
       "Brand identity for a restaurant in Cabo de Palos, Spain. CP8 is a contemporary and elegant seafood restaurant. We used this in contrast with some pictures of the tradition of the town of Cabo de Palos.",
     image: "design%20projects/cp8.png",
@@ -115,7 +110,6 @@ export const designprojects = [
   {
     id: 5,
     title: "RPB",
-    role: ["Graphic Design", "Brand Identity"],
     description:
       "Brand identity for a law firm specialised on sports and entertainment law. We used the concept of the visual rules of the sports, which are the lines, for the whole brand.",
     image: "design%20projects/rpb.png",
@@ -192,7 +186,7 @@ export const webprojects = [
     title: "NOW Energy",
     skills: ["Wordpress"],
     description:
-      "Website for a Solar Energy company that I made while working at ONMI Design. It has multiple pages with lots of information and different target audiences: homes, small companies and industries.",
+      "Website for a Solar Power company that I made while working at ONMI Design. It has multiple pages with lots of information and different target audiences: homes, small companies and industries.",
     video: "./web projects/now energy.mp4",
     link: "",
     year: "2021"

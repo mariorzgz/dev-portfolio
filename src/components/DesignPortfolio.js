@@ -49,14 +49,6 @@ class DesignPortfolio extends Component{
           alt={project.title}
           onClick={this.handleProjects}>
           </div>
-
-          /* <img className="project hvr-grow" data-cursor="hover"
-          key={project.id}
-          id={project.id}
-          src={project.image}
-          alt={project.title}
-          onClick={this.handleProjects}
-          ></img> */
         )
     });
 
