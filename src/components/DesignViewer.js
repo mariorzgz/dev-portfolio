@@ -20,7 +20,7 @@ class DesignViewer extends React.Component{
     const gallery = project.gallery.map(image => {
       return(
       <li key={image}>
-        <img className="" style={{width: "700px"}}
+        <img className="project-image"
         key={image}
         src={image}
         alt={image}
@@ -34,15 +34,11 @@ class DesignViewer extends React.Component{
 
         <div className="box">
 
-          <p id="close" className="close-icon" onClick={this.closeViewer}>✕</p>
+          <p id="close" data-cursor="close" className="close-icon" onClick={this.closeViewer}>✕</p>
 
           {project.link.length > 0 &&
               <a className="project-link" target="_blank" rel="noreferrer" href={project.link}>Visit link</a>
           }
-
-          <div className="gallery">
-            {gallery}
-          </div>
 
           <div className="project-data width-33">
 
@@ -55,6 +51,10 @@ class DesignViewer extends React.Component{
               <p>Year: {project.year}</p>
             </div>
 
+          </div>
+
+          <div className="gallery">
+            {gallery}
           </div>
 
         </div>

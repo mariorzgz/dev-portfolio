@@ -45,7 +45,7 @@ export default function About() {
           <div className="second-photo">
 
             <p className="second-photo-text contrast">
-            I love Bretzen<br></br>(and Bier too)
+            I love Brezen<br></br>(and Bier too)
             </p>
 
             <img

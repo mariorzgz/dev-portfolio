@@ -87,6 +87,7 @@ function App() {
     });
 
     let hoverCursors = document.querySelectorAll('[data-cursor="hover"]');
+    let closeCursors = document.querySelectorAll('[data-cursor="close"]');
 
     let munichCursor = document.querySelector('[data-cursor="munich"]');
     let spainCursor = document.querySelector('[data-cursor="spain"]');
@@ -121,6 +122,18 @@ function App() {
         cursorLeaves()
         cursor.innerHTML = "🙂"
       });
+    });
+
+      closeCursors.forEach(function (closeCursor) {
+        closeCursor.addEventListener("mouseenter", () => {
+          cursorEnters()
+          cursor.innerHTML = "❌"
+        });
+
+        closeCursor.addEventListener("mouseleave", () => {
+          cursorLeaves()
+          cursor.innerHTML = "🙂"
+        });
     });
 
   });
