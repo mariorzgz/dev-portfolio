@@ -84,6 +84,7 @@
   .design-projects .project{
     width: 300px;
     margin-right: 0px;
+    margin-top: -50px;
   }
 
   #design-portfolio .first-emoji {
@@ -95,9 +96,13 @@
     left: initial;
   }
 
-  .design-projects :nth-child(3) {
-    margin-bottom: 20px;
+  .design-projects :first-child{
     margin-top: 0px;
+  }
+
+  .design-projects :nth-child(3) {
+    margin-bottom: 0px;
+    margin-top: -50px;
   }
 
   /* About */

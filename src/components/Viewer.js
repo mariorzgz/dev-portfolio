@@ -30,9 +30,9 @@ class Viewer extends React.Component{
 
           <p id="close" className="close-icon" onClick={this.closeViewer}>✕</p>
 
-          <div className="d-flex align-items-center padding-x">
+          <div className="d-flex align-items-center padding-x project-container">
 
-            <div className="width-33">
+            <div className="width-33 project-info">
 
 
               <h2 id="title">{project.title}</h2>
@@ -40,8 +40,8 @@ class Viewer extends React.Component{
 
             </div>
 
-            <div className="width-66 padding-x text-right">
-              <video className=""
+            <div className="width-66 padding-x text-right video-container">
+              <video className="video"
                 alt={project.title}
                 src={project.video}
                 autoPlay muted loop>
@@ -60,7 +60,7 @@ class Viewer extends React.Component{
               {skills}
             </ul>
             {project.link.length > 0 &&
-              <a target="_blank" rel="noreferrer" href={project.link}>Visit page</a>
+              <a className="project-link" target="_blank" rel="noreferrer" href={project.link}>Visit page</a>
             }
 
           </div>
