@@ -28,7 +28,7 @@ class Viewer extends React.Component{
 
         <div className="box">
 
-          <p id="close" className="close-icon" onClick={this.closeViewer}>✕</p>
+          <p id="close" data-cursor="close" className="close-icon" onClick={this.closeViewer}>✕</p>
 
           <div className="d-flex align-items-center padding-x project-container">
 

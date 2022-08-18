@@ -1,7 +1,6 @@
 /* Viewer */
 
 #viewer, #design-viewer{
-  display: none;
   position: fixed;
   background: #3619FD;
   width: 100%;
@@ -11,6 +10,20 @@
   top: 0;
   left: 0;
   z-index: 11;
+  transform: translateY(100vh);
+  opacity: 0;
+  -webkit-transition: transform 0.5s ease-in-out, opacity 0.4s ease-in;
+  -moz-transition: transform 0.5s ease-in-out, opacity 0.4s ease-in;
+  -o-transition: transform 0.5s ease-in-out, opacity 0.4s ease-in;
+  transition: transform 0.5s ease-in-out, opacity 0.4s ease-in;
+}
+
+#viewer.open-viewer, #design-viewer.open-viewer{
+  opacity: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(0vh);
 }
 
 .box{
@@ -25,12 +38,6 @@
   margin: .2em 0em;
 }
 
-#viewer.open-viewer, #design-viewer.open-viewer{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .close-icon {
   position: absolute;
   text-align: right;
@@ -39,6 +46,8 @@
   top: 2em;
   right: 6em;
   z-index: 6;
+  border-radius: 50px;
+  padding: 5px 10px;
 }
 
 #viewer .skills,
@@ -69,13 +78,17 @@
 #design-viewer .gallery{
   margin-left: 12em;
   width: 100vw;
-  overflow-y: auto;
+  overflow-y: overlay;
   overflow-x: hidden;
   height: 100%;
   display: flex;
   align-items: center;
   flex-direction: column;
   z-index: 5;
+}
+
+#design-viewer .gallery img{
+  width: 700px;
 }
 
 #design-viewer .gallery li:first-child{
@@ -92,21 +105,21 @@
 }
 
 #design-viewer .project-data{
-  height: 90vh;
+  height: 85%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   position: absolute;
   background-color: transparent;
   color: white;
-  top: 2em;
+  padding: 3em 0px;
   left: 2em;
   z-index: 4;
 }
 
 #design-viewer .project-link{
   position: absolute;
-  background-color: transparent;
+  background-color: #3619FD;
   color: white;
   text-align: right;
   bottom: 2em;
@@ -130,6 +143,9 @@
   .close-icon{
     top: 1em;
     right: 1em;
+    background-color: #3619FD;
+    border-radius: 50px;
+    padding: 5px 10px;
   }
 
   #viewer.web #title{
@@ -176,6 +192,53 @@
 
   #viewer.web .skills li:last-child{
     margin-right: 0px;
+  }
+
+  /* Design Viewer */
+
+  #design-viewer .project-data{
+    left: 1em;
+    height: 40%;
+    padding: 5em 0px;
+    width: 90%;
+    z-index: 3;
+  }
+
+  #design-viewer .gallery {
+    margin-left: 0px;
+  }
+
+  #design-viewer .gallery li{
+    margin-right: 0px;
+  }
+
+  #design-viewer .gallery li:first-child{
+    margin-top: 60vh;
+    background-color: transparent;
+  }
+
+
+  #design-viewer .gallery li:last-child{
+    margin-bottom: 2em;
+  }
+
+  #design-viewer .gallery li{
+    padding: 0px;
+    border-radius: 0px;
+    background-color: #3619FD;
+  }
+
+  #design-viewer .gallery img{
+    margin-bottom: -.3em;
+    width: 100vw;
+  }
+
+  #design-viewer .project-link{
+    border: 3px solid #3619FD;
+    top: 1em;
+    bottom: initial;
+    right: initial;
+    left: 33%;
   }
 
 }
