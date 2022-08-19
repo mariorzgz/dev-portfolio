@@ -9,6 +9,7 @@ import WebPortfolio from "./components/WebPortfolio";
 import DesignPortfolio from "./components/DesignPortfolio";
 import Services from "./components/Services";
 import Footer from "./components/Footer";
+import Loader from "./components/Loader";
 
 import CookieConsent from "react-cookie-consent";
 
@@ -25,11 +26,14 @@ import './css/About.css';
 import './css/Contact.css';
 import './css/Services.css';
 import './css/MediaQueries.css';
+import "./css/Loader.css";
 // import { toBePartiallyChecked } from "@testing-library/jest-dom/dist/matchers";
 
 function App() {
 
   const body = useRef(null);
+
+  /* Cursor Effects */
 
   useEffect(() => {
 
@@ -136,10 +140,31 @@ function App() {
         });
     });
 
-  });
+  })
+
+  /* Loading Screen */
+
+  useEffect(() => {
+
+    const body = document.querySelector("body");
+    const loadingScreen = document.getElementById("loader");
+
+    body.classList.add("no-scroll");
+
+    setTimeout(loaded, 3000);
+
+    function loaded() {
+      body.classList.remove("no-scroll");
+      loadingScreen.classList.add("loaded");
+      loadingScreen.addEventListener("transitionend",() => {
+        loadingScreen.remove();
+      });
+    }
+  })
 
   return (
     <main className="App body-bg" ref={body}>
+
       <div className="cursor">🙂</div>
 
       <CookieConsent
@@ -152,6 +177,8 @@ function App() {
         This website uses basic cookies to enhance the user experience.{" "}
       </CookieConsent>
 
+      <Loader />
+
       <Navbar />
       <Intro />
       <WebPortfolio />
@@ -160,6 +187,7 @@ function App() {
       <Services />
       <Contact />
       <Footer />
+
     </main>
   );
 
