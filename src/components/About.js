@@ -24,7 +24,7 @@ export default function About() {
 
         </div>
 
-        <div className="width-66 padding-x m-0-padding">
+        <div className="width-66 padding-x m-0-padding photos">
 
           <div className="first-photo">
 
