@@ -1,11 +1,10 @@
 /* Media Queries */
 
 /* Media Query for Mobile Devices */
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   body {
     font-size: 1.3em;
   }
-
 
   .cursor{
     display: none;
@@ -211,17 +210,132 @@
   }
 }
 
+/* Vertical tablets */
+
+@media (min-width: 800px) and (max-width: 900px){
+
+}
+
+/* Media Query for Tablets Ipads horizontal mode */
+@media (min-width: 900px) and (max-width: 1200px){
+  body {
+    font-size: 1.3em;
+  }
+
+  .cursor{
+    display: none;
+  }
+
+  .container {
+    padding: 2em 4em;
+  }
+
+  .padding{
+    padding: 3em 4em;
+  }
+
+  .padding-x{
+    padding: 0em 4em;
+  }
+
+  .close-icon{
+    right: 4em;
+  }
+
+  /* Viewer */
+
+  .project-info{
+    width: 20%;
+  }
+
+  .video-container{
+    width: 80%;
+  }
+
+  .video-container video{
+    width: 600px;
+  }
+
+  /* Design Portfolio */
+
+  .design-projects{
+    flex-direction: row;
+  }
+
+  #design-portfolio .second-emoji {
+    transform: rotate(45deg) translateY(-50px);
+    left: 200px;
+  }
+
+  .design-projects .project {
+    margin-right: -2em;
+  }
 
 
-/* Media Query for Tablets Ipads portrait mode */
-@media (min-width: 768px) and (max-width: 1024px){
-  /* body {
-    color: blue;
-  } */
+   /* About */
+
+   .first-photo{
+    flex-direction: column-reverse;
+  }
+
+  .first-photo .first-photo-img {
+    width: 300px;
+    z-index: 2;
+    transform: translate(-10px, 10px);
+  }
+
+  .first-photo-text{
+    position: initial;
+  }
+
+  .first-photo .flecha {
+    left: 190px;
+    transform: rotate(-90deg);
+    width: 120px;
+    position: absolute;
+    top: 60px;
+    z-index: 3;
+  }
+
+  .photos{
+    padding: 0em 0em 0em 10em;
+  }
+
+  .second-photo{
+    /* transform: translate(20px, -10px); */
+
+    transform: none;
+    flex-direction: column-reverse;
+  }
+
+  .second-photo .second-photo-img {
+    align-self: flex-end;
+    transform: none;
+    position: relative;
+    width: 300px;
+    z-index: 1;
+  }
+
+  .second-photo-text{
+    position: initial;
+    text-align: right;
+  }
+
+  /* Services */
+
+  #services ul{
+    padding: 0;
+  }
+
+  #services p{
+    text-align: center;
+    margin-bottom: 2em;
+  }
+
 }
 
 /* Media Query for Laptops and Desktops */
-@media (min-width: 1025px) {
+@media (min-width: 1200px) {
   /* body {
     color: red;
   } */
