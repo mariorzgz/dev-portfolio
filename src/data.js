@@ -1,3 +1,13 @@
+export const loaders = [
+  "./loaders/1.svg",
+  "./loaders/2.svg",
+  "./loaders/3.svg",
+  "./loaders/4.svg",
+  "./loaders/5.svg",
+  "./loaders/6.svg",
+  "./loaders/7.svg",
+  "./loaders/8.svg"
+]
 export const designprojects = [
   {
     id: 0,

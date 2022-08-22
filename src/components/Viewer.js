@@ -3,8 +3,6 @@ import { webprojects } from "../data";
 
 class Viewer extends React.Component{
 
-
-
   closeViewer(){
     const viewer = document.getElementById("viewer");
     viewer.classList.remove("open-viewer");
@@ -64,8 +62,6 @@ class Viewer extends React.Component{
             }
 
           </div>
-
-
 
         </div>
 
