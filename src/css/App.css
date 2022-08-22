@@ -88,8 +88,13 @@ body.no-scroll{
 }
 
 a{
+  cursor: none;
   text-decoration: none;
   color: initial;
+}
+
+a:hover{
+  text-decoration: underline;
 }
 
 .container{

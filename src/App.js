@@ -15,7 +15,7 @@ import CookieConsent from "react-cookie-consent";
 
 
 import { gsap } from "gsap";
-// import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 import './css/App.css';
 import './css/Intro.css';
@@ -32,6 +32,38 @@ import "./css/Loader.css";
 function App() {
 
   const body = useRef(null);
+
+  /* Scroll Animation */
+
+  useEffect(() => {
+
+    gsap.registerPlugin(ScrollTrigger);
+
+    const element = body.current;
+
+    const contact = element.querySelector("#contact");
+
+
+    gsap.set(element, {
+      backgroundColor: '#FFF3E2',
+    })
+
+    const tl = gsap.timeline({
+
+        scrollTrigger: {
+        trigger: "#contact",
+        scrub: .1,
+        start: "top center",
+        end: "bottom bottom"
+
+      }
+
+    })
+
+    tl
+    .to(element, { duration: 1, color: "#ffffff", backgroundColor: '#000000', ease: "none" }, 1)
+
+  });
 
   /* Cursor Effects */
 
@@ -92,6 +124,8 @@ function App() {
 
     let hoverCursors = document.querySelectorAll('[data-cursor="hover"]');
     let closeCursors = document.querySelectorAll('[data-cursor="close"]');
+    let clickCursors = document.querySelectorAll('[data-cursor="click"]');
+
 
     let munichCursor = document.querySelector('[data-cursor="munich"]');
     let spainCursor = document.querySelector('[data-cursor="spain"]');
@@ -128,16 +162,28 @@ function App() {
       });
     });
 
-      closeCursors.forEach(function (closeCursor) {
-        closeCursor.addEventListener("mouseenter", () => {
-          cursorEnters()
-          cursor.innerHTML = "❌"
-        });
+    closeCursors.forEach(function (closeCursor) {
+      closeCursor.addEventListener("mouseenter", () => {
+        cursorEnters()
+        cursor.innerHTML = "❌"
+      });
 
-        closeCursor.addEventListener("mouseleave", () => {
-          cursorLeaves()
-          cursor.innerHTML = "🙂"
-        });
+      closeCursor.addEventListener("mouseleave", () => {
+        cursorLeaves()
+        cursor.innerHTML = "🙂"
+      });
+    });
+
+    clickCursors.forEach(function (clickCursor) {
+      clickCursor.addEventListener("mouseenter", () => {
+        cursorEnters()
+        cursor.innerHTML = "👌"
+      });
+
+      clickCursor.addEventListener("mouseleave", () => {
+        cursorLeaves()
+        cursor.innerHTML = "🙂"
+      });
     });
 
   })

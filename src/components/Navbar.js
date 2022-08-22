@@ -14,7 +14,7 @@ export default function Navbar() {
 
         <nav className="">
 
-          <a href="#contact" className="contrast">
+          <a data-cursor="click" href="#contact" className="contrast">
             Contact
           </a>
 
