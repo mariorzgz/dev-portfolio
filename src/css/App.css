@@ -250,7 +250,7 @@ a:hover{
   padding: 1em;
   border: 5px solid black;
   box-shadow: 5px 5px black;
-  z-index: 999;
+  z-index: 99;
   animation: cookies infinite linear 4s;
 }
 

@@ -9,7 +9,7 @@
   background-color: #FFF3E2;
   width: 100vw;
   height: 100vh;
-  z-index: 30;
+  z-index: 999;
   transition: opacity 1s ease;
 }
 
@@ -21,8 +21,6 @@
   from {transform: rotate(0deg);}
   to {transform: rotate(360deg);}
 }
-
-
 
 #loader.loaded{
   opacity: 0;
