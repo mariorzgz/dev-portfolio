@@ -42,17 +42,20 @@ function App() {
     const element = body.current;
 
     const contact = element.querySelector("#contact");
+    const footer = element.querySelector("#footer");
+
+    const links = element.querySelectorAll("#contact a, #footer a, #scrollTop")
 
 
     gsap.set(element, {
       backgroundColor: '#FFF3E2',
     })
 
-    const tl = gsap.timeline({
+    const contactScroll = gsap.timeline({
 
         scrollTrigger: {
         trigger: "#contact",
-        scrub: .1,
+        scrub: 3,
         start: "top center",
         end: "bottom bottom"
 
@@ -60,8 +63,11 @@ function App() {
 
     })
 
-    tl
-    .to(element, { duration: 1, color: "#ffffff", backgroundColor: '#000000', ease: "none" }, 1)
+    contactScroll
+    .to(element, { duration: 1, backgroundColor: '#000000', ease: "none" }, 0)
+    .to(footer, { duration: 1, color: "#ffffff", ease: "none" }, 0)
+    .to(contact, { duration: 1, color: "#ffffff", ease: "none" }, 0)
+    .to(links, { duration: 1, color: "#ffffff", ease: "none" }, 0)
 
   });
 
