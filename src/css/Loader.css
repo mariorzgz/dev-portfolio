@@ -9,7 +9,7 @@
   background-color: #FFF3E2;
   width: 100vw;
   height: 100vh;
-  z-index: 15;
+  z-index: 30;
   transition: opacity 1s ease;
 }
 

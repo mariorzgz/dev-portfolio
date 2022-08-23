@@ -143,12 +143,12 @@ export const designprojects = [
 export const webprojects = [
   {
     id: 0,
-    title: "Random Quote Machine",
-    skills: ["React"],
+    title: "My Portfolio",
+    skills: ["React", "GSAP"],
     description:
-      "My first app in React. It started as an exercise for the freecodecamp Frontend Development Libraries course. You get a random color and a random font for each quote, making fun and dumb combinations.",
-    video: "./web projects/random quote machine.mp4",
-    link: "https://mariorzgz.github.io/random-quote-machine/",
+      "My first webapp in React. It has two galleries of projects, scroll effects with GSAP Scroll Trigger and lots of microinteractions.",
+    video: "./web projects/dev portfolio.mp4",
+    link: ".",
     year: "2022"
   },
   {
