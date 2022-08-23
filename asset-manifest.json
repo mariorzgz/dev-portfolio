@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/dev-portfolio/static/css/main.eb98e5de.css",
-    "main.js": "/dev-portfolio/static/js/main.23219cdb.js",
-    "static/js/787.eef0f175.chunk.js": "/dev-portfolio/static/js/787.eef0f175.chunk.js",
-    "static/media/CascadiaCode.woff2": "/dev-portfolio/static/media/CascadiaCode.61442455812b2cee49c4.woff2",
-    "static/media/cocogoosepro-webfont.woff": "/dev-portfolio/static/media/cocogoosepro-webfont.4c1043cc0b6c01a20d78.woff",
-    "static/media/cocogoosepro-webfont.woff2": "/dev-portfolio/static/media/cocogoosepro-webfont.b6fe1a00268f15dd039b.woff2",
-    "index.html": "/dev-portfolio/index.html",
-    "main.eb98e5de.css.map": "/dev-portfolio/static/css/main.eb98e5de.css.map",
-    "main.23219cdb.js.map": "/dev-portfolio/static/js/main.23219cdb.js.map",
-    "787.eef0f175.chunk.js.map": "/dev-portfolio/static/js/787.eef0f175.chunk.js.map"
+    "main.css": "/static/css/main.4b70d8e8.css",
+    "main.js": "/static/js/main.befbd88b.js",
+    "static/js/787.eef0f175.chunk.js": "/static/js/787.eef0f175.chunk.js",
+    "static/media/CascadiaCode.woff2": "/static/media/CascadiaCode.61442455812b2cee49c4.woff2",
+    "static/media/cocogoosepro-webfont.woff": "/static/media/cocogoosepro-webfont.4c1043cc0b6c01a20d78.woff",
+    "static/media/cocogoosepro-webfont.woff2": "/static/media/cocogoosepro-webfont.b6fe1a00268f15dd039b.woff2",
+    "index.html": "/index.html",
+    "main.4b70d8e8.css.map": "/static/css/main.4b70d8e8.css.map",
+    "main.befbd88b.js.map": "/static/js/main.befbd88b.js.map",
+    "787.eef0f175.chunk.js.map": "/static/js/787.eef0f175.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.eb98e5de.css",
-    "static/js/main.23219cdb.js"
+    "static/css/main.4b70d8e8.css",
+    "static/js/main.befbd88b.js"
   ]
 }
