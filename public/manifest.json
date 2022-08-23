@@ -1,6 +1,11 @@
 {
- "name": "App",
- "icons": [
+  "short_name": "Mario Rodríguez",
+  "name": "Mario Rodríguez - Web Developer",
+  "description": "I'm Mario, a Fullstack Developer and Graphic Designer based in Munich",
+  "background_color": "#FFF3E2",
+  "theme_color": "#F05A24",
+  "display": "minimal-ui",
+  "icons": [
   {
    "src": "\/android-icon-36x36.png",
    "sizes": "36x36",
