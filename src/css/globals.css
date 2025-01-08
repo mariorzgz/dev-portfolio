@@ -75,22 +75,23 @@
 
 /* Scrollbar */
 ::-webkit-scrollbar {
-	width: 5px;
+	width: 10px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-	background: var(--color-yellow);
+	background: var(--color-dark);
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-background: var(--color-red);
+	background: var(--color-teal);
+	border-radius: 5px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-background: var(--color-red);
+	background: var(--color-teal);
 }
 
 @keyframes load8 {
@@ -200,6 +201,14 @@ a:hover {
 
 .flex-66 {
 	flex-basis: 66%;
+}
+
+.flex-small-half {
+	flex-basis: 41.666667%;
+}
+
+.flex-big-half {
+	flex-basis: 58.333333%;
 }
 
 .flex-50 {

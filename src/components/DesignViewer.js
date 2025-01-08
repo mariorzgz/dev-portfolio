@@ -2,16 +2,12 @@ import React from "react";
 import { designprojects } from "../data";
 
 class DesignViewer extends React.Component{
-
-
-
   closeViewer(){
     const viewer = document.getElementById("design-viewer");
     viewer.classList.remove("open-viewer");
     const body = document.querySelector("body");
     body.classList.remove("no-scroll")
   }
-
   render(){
 
     const id = this.props.id
@@ -28,7 +24,6 @@ class DesignViewer extends React.Component{
       </li>
       )
     });
-
     return(
       <div id="design-viewer" className={this.props.type}>
 

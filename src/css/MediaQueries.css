@@ -61,6 +61,10 @@
 
   /* Web Portfolio */
 
+  #web-portfolio {
+    flex-direction: column;
+  }
+
   .web-projects-mobile{
     display: flex;
     flex-direction: column;
@@ -79,7 +83,7 @@
   /* Design Portfolio */
 
   #design-portfolio {
-    flex-direction: row;
+    flex-direction: column;
     gap: 10px;
   }
 
@@ -98,45 +102,8 @@
 
   /* About */
 
-  .first-photo{
-    flex-direction: column-reverse;
-  }
-
-  .first-photo .first-photo-img {
-    width: 300px;
-    z-index: 2;
-    transform: translate(-10px, 10px);
-  }
-
-  .first-photo-text{
-    position: initial;
-  }
-
-  .first-photo .flecha {
-    left: 190px;
-    transform: rotate(-90deg);
-    width: 120px;
-    position: absolute;
-    top: 60px;
-    z-index: 3;
-  }
-
-  .second-photo{
-    /* transform: translate(20px, -10px); */
-    transform: none;
-    flex-direction: column-reverse;
-  }
-
-  .second-photo .second-photo-img {
-    transform: none;
-    position: relative;
-    width: 300px;
-    z-index: 1;
-  }
-
-  .second-photo-text{
-    position: initial;
-    text-align: left;
+  #about {
+    flex-direction: column;
   }
 
   /* Services */

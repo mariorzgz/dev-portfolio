@@ -17,5 +17,13 @@
 }
 
 .navbar .contrast {
-	color: var(--color-blue);
+	background-color: var(--color-red);
+	border-radius: 50px;
+	padding: .4em .8em .2em;
+	color: var(--color-light);
+	transition: background-color .2s ease-in-out;
+}
+
+.navbar .contrast:hover {
+	background-color: var(--color-dark);
 }

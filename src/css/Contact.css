@@ -2,12 +2,23 @@
 
 #contact {
   background-color: var(--color-blue);
-  border-radius: 50px 50px 0 0;
   color: var(--color-light);
   display: flex;
   flex-direction: column;
   justify-content: center;
   height: 50vh;
+  position: relative;
+}
+
+#contact:before {
+  content: '';
+  position: absolute;
+  height: 50px;
+  width: 100%;
+  background-color: var(--color-blue);
+  border-radius: 50px 50px 0 0;
+  top: -50px;
+  left: 0;
 }
 
 #contact a {

@@ -1,5 +1,21 @@
 /* Services */
 
+#services {
+  background-color: var(--color-light);
+  position: relative;
+}
+
+#services:before {
+  content: '';
+  position: absolute;
+  height: 50px;
+  width: 100%;
+  background-color: var(--color-light);
+  border-radius: 50px 50px 0 0;
+  top: -50px;
+  left: 0;
+}
+
 ul {
   display: flex;
   justify-content: space-between;

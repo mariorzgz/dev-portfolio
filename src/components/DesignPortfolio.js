@@ -48,14 +48,15 @@ class DesignPortfolio extends Component{
           }}
           alt={project.title}
           onClick={this.handleProjects}>
+            <p>{project.title}</p>
           </div>
         )
     });
 
     return (
 
-      <section id="design-portfolio" className="padding-y d-flex">
-          <div className="flex-33 width-100 padding text">
+      <section id="design-portfolio" className="d-flex">
+          <div className="flex-small-half flex-shrink width-100 padding text">
             <h2>
               Design Portfolio
             </h2>
@@ -68,7 +69,7 @@ class DesignPortfolio extends Component{
             </p>
         </div>
 
-        <div className="flex-66 width-100 design-projects">
+        <div className="flex-big-half width-100 design-projects">
           {projects}
         </div>
 

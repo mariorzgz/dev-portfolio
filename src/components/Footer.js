@@ -4,7 +4,7 @@ export default function Footer() {
   return(
     <section id="footer" className="width-100">
       <div className="footer-laptop d-flex padding-x justify-content-between align-items-end">
-        <p className="text-left">Mario Rodríguez<br></br>Fullstack Developer</p>
+        <p className="text-left">Mario Rodríguez<br></br>Web Developer & Graphic Designer</p>
         <p className="text-center">
           <a data-cursor="click" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/mariorzgz/">Linkedin</a> /
           <a data-cursor="click" target="_blank" rel="noreferrer" href="https://github.com/mariorzgz"> Github</a> /

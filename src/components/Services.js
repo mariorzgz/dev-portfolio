@@ -2,10 +2,10 @@ import React from "react";
 
 export default function Services() {
   return (
-    <section id="services">
+    <section id="services" className="padding-y">
       <div className="width-100 text-center">
 
-        <h2>Services</h2>
+        <h2>Skills</h2>
 
         <div className="padding text-left m-0-padding">
 

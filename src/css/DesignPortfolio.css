@@ -3,7 +3,7 @@
   background-color: var(--color-blue);
   flex-direction: row-reverse;
   gap: 5px;
-  padding-bottom: 60px;
+  padding-bottom: 100px;
 }
 
 #design-portfolio .text {
@@ -15,11 +15,12 @@
 .design-projects{
   display: grid;
   grid-template-areas: "one two   two   five five five"
-                       "one three three four six  six";
+                       "three three three four six  six";
   gap: 5px;
 }
 
 .design-projects .project {
+  position: relative;
   border-radius: 0;
   margin: 0;
   width: 100%;
@@ -29,32 +30,73 @@
   /* aspect-ratio: 9 / 16; */
 }
 
+.design-projects .project p {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .2s ease-in-out;
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  align-items: center;
+  justify-content: center;
+  border-radius: 25px;
+  font-family: var(--font-mono);
+  font-size: .8em;
+  text-align: center;
+}
+
 .design-projects :nth-child(1) {
   grid-area: one;
+}
+
+.design-projects :nth-child(1) p {
+  background-color: var(--color-yellow);
 }
 
 .design-projects :nth-child(2) {
   grid-area: two;
 }
 
+.design-projects :nth-child(2) p {
+  background-color: var(--color-red);
+}
+
 .design-projects :nth-child(3) {
   grid-area: three;
+}
+
+.design-projects :nth-child(3) p {
+  background-color: var(--color-teal);
 }
 
 .design-projects :nth-child(4) {
   grid-area: four;
 }
 
+.design-projects :nth-child(4) p {
+  background-color: var(--color-red);
+}
+
 .design-projects :nth-child(5) {
   grid-area: five;
+}
+
+.design-projects :nth-child(5) p {
+  background-color: var(--color-yellow);
 }
 
 .design-projects :nth-child(6) {
   grid-area: six;
 }
 
-.design-projects .project:hover{
-  border-radius: 0%;
+.design-projects :nth-child(6) p {
+  background-color: var(--color-teal);
+}
+
+.design-projects .project:hover p {
+  opacity: 1;
 }
 
 
