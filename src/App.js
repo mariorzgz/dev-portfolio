@@ -6,49 +6,48 @@ import About from "./components/About";
 import Contact from "./components/Contact";
 import Navbar from "./components/Navbar";
 import WebPortfolio from "./components/WebPortfolio";
+import Experience from "./components/Experience";
 import DesignPortfolio from "./components/DesignPortfolio";
 import Services from "./components/Services";
 import Footer from "./components/Footer";
 import Loader from "./components/Loader";
 
-import CookieConsent from "react-cookie-consent";
-
-
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-import './css/App.css';
-import './css/Intro.css';
-import './css/Viewer.css';
-import './css/WebPortfolio.css';
-import './css/DesignPortfolio.css';
-import './css/About.css';
-import './css/Contact.css';
-import './css/Services.css';
+import "./css/globals.css";
 import './css/MediaQueries.css';
-import "./css/Loader.css";
+
 // import { toBePartiallyChecked } from "@testing-library/jest-dom/dist/matchers";
 
 function App() {
 
   const body = useRef(null);
+  const color_dark = "#080708"
+  const color_light = "#E6E8E6"
+  const color_red = "#DF2935"
+  const color_yellow = "#FDCA40"
 
   /* Scroll Animation */
 
+  /*
   useEffect(() => {
 
     gsap.registerPlugin(ScrollTrigger);
+
+    const color_dark = "#080708"
+    const color_red = "#DF2935"
+    const color_light = "#E6E8E6"
 
     const element = body.current;
 
     const contact = element.querySelector("#contact");
     const footer = element.querySelector("#footer");
-
     const links = element.querySelectorAll("#contact a, #footer a, #scrollTop")
 
 
     gsap.set(element, {
-      backgroundColor: '#FFF3E2',
+      backgroundColor: color_red,
     })
 
     const contactScroll = gsap.timeline({
@@ -64,12 +63,13 @@ function App() {
     })
 
     contactScroll
-    .to(element, { duration: 1, backgroundColor: '#000000', ease: "none" }, 0)
-    .to(footer, { duration: 1, color: "#ffffff", ease: "none" }, 0)
-    .to(contact, { duration: 1, color: "#ffffff", ease: "none" }, 0)
-    .to(links, { duration: 1, color: "#ffffff", ease: "none" }, 0)
+    .to(element, { duration: 1, backgroundColor: color_dark, ease: "none" }, 0)
+    .to(footer, { duration: 1, color: color_light, ease: "none" }, 0)
+    .to(contact, { duration: 1, color: color_light, ease: "none" }, 0)
+    .to(links, { duration: 1, color: color_light, ease: "none" }, 0)
 
   });
+  */
 
   /* Cursor Effects */
 
@@ -82,18 +82,18 @@ function App() {
     const cursorEnters = () => {
       gsap.to(cursor, {
         scale: 1.5,
-        backgroundColor: "blue",
+        backgroundColor: color_dark,
         mixBlendMode: "normal",
-        color: "white"
+        color: color_light
       })
     }
 
     const cursorLeaves = () => {
       gsap.to(cursor, {
         scale: 1,
-        backgroundColor: "white",
-        mixBlendMode: "difference",
-        color: "black"
+        backgroundColor: color_light,
+        /*mixBlendMode: "difference",*/
+        color: color_dark
       })
     }
 
@@ -132,7 +132,7 @@ function App() {
     let closeCursors = document.querySelectorAll('[data-cursor="close"]');
     let clickCursors = document.querySelectorAll('[data-cursor="click"]');
 
-
+    /*
     let munichCursor = document.querySelector('[data-cursor="munich"]');
     let spainCursor = document.querySelector('[data-cursor="spain"]');
 
@@ -155,6 +155,7 @@ function App() {
       cursorLeaves()
       cursor.innerHTML = "🙂"
     });
+    */
 
     hoverCursors.forEach(function (hoverCursor) {
       hoverCursor.addEventListener("mouseenter", () => {
@@ -215,24 +216,15 @@ function App() {
   })
 
   return (
-    <main className="App body-bg" ref={body}>
+    <main className="" ref={body}>
 
       <div className="cursor">🙂</div>
-
-      <CookieConsent
-        location="none"
-        buttonText="I understand"
-        cookieName="CookieConsent"
-        disableStyles={true}
-        expires={150}
-      >
-        This website uses basic cookies to enhance the user experience.{" "}
-      </CookieConsent>
 
       <Loader />
 
       <Navbar />
       <Intro />
+      {/* <Experience /> */}
       <WebPortfolio />
       <DesignPortfolio />
       <About />

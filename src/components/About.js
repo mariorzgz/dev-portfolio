@@ -23,41 +23,6 @@ export default function About() {
           </p>
 
         </div>
-
-        <div className="width-66 padding-x m-0-padding photos">
-
-          <div className="first-photo">
-
-            <img
-              className="first-photo-img"
-              alt="That's me in Munich Pride '22"
-              src="foto1.webp">
-            </img>
-
-            <img className="flecha" src="flecha.svg" alt="flecha"></img>
-
-            <p className="first-photo-text contrast">
-            That's me in<br></br>Munich Pride '22
-            </p>
-
-          </div>
-
-          <div className="second-photo">
-
-            <p className="second-photo-text contrast">
-            I love Brezen<br></br>(and Bier too)
-            </p>
-
-            <img
-              className="second-photo-img"
-              alt="A sunny day on the Olympiapark eating one bretzel, one schnitzel with french fries, one potato with quark and two beers"
-              src="foto2.webp">
-            </img>
-
-          </div>
-
-        </div>
-
       </div>
     </section>
   );

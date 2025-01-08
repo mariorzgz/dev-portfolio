@@ -1,43 +1,60 @@
 /* Design Portfolio */
-.design-projects{
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  height: 750px;
-  padding-left: 2em;
-  padding-right: 2em;
+#design-portfolio {
+  background-color: var(--color-blue);
+  flex-direction: row-reverse;
+  gap: 5px;
+  padding-bottom: 60px;
 }
 
-.design-projects .project{
-  box-shadow: 0px 0px #F05A24;
-  margin-right: 10px;
-  margin-bottom: 20px;
-  border-radius: 50%;
+#design-portfolio .text {
+  background-color: var(--color-red);
+  color: var(--color-light);
+  border-radius: 25px;
+}
+
+.design-projects{
+  display: grid;
+  grid-template-areas: "one two   two   five five five"
+                       "one three three four six  six";
+  gap: 5px;
+}
+
+.design-projects .project {
+  border-radius: 0;
+  margin: 0;
+  width: 100%;
+  min-height: 300px;
+  border-radius: 25px;
+  object-fit: cover;
+  /* aspect-ratio: 9 / 16; */
+}
+
+.design-projects :nth-child(1) {
+  grid-area: one;
+}
+
+.design-projects :nth-child(2) {
+  grid-area: two;
+}
+
+.design-projects :nth-child(3) {
+  grid-area: three;
+}
+
+.design-projects :nth-child(4) {
+  grid-area: four;
+}
+
+.design-projects :nth-child(5) {
+  grid-area: five;
+}
+
+.design-projects :nth-child(6) {
+  grid-area: six;
 }
 
 .design-projects .project:hover{
-  box-shadow: 5px 5px #F05A24;
   border-radius: 0%;
 }
 
 
-.design-projects :nth-child(3){
-  margin: 80px 0px;
-}
-
-#design-portfolio .emoji{
-  z-index: 5;
-  position: absolute;
-}
-
-#design-portfolio .first-emoji{
-  transform: rotate(-45deg);
-  right: 300px;
-}
-
-#design-portfolio .second-emoji{
-  transform: rotate(45deg) translateY(-300px);
-  left: 300px;
-}

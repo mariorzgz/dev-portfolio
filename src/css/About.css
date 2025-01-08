@@ -1,4 +1,11 @@
 /* About */
+#about {
+  border-radius: 50px 50px 0 0;
+  transform: translateY(-50px);
+  background-color: var(--color-yellow);
+  color: var(--color-dark);
+}
+
 .first-photo{
   position: relative;
   display: flex;
@@ -41,4 +48,5 @@
   bottom: -20px;
   right: 400px;
   text-align: right;
+  z-index: 3;
 }

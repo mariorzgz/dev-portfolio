@@ -43,8 +43,8 @@ class DesignPortfolio extends Component{
             backgroundPosition: 'center',
             backgroundSize: 'cover',
             backgroundRepeat: 'no-repeat',
-            height: "300px",
-            width: "300px"
+            // height: "300px",
+            // width: "300px"
           }}
           alt={project.title}
           onClick={this.handleProjects}>
@@ -54,31 +54,28 @@ class DesignPortfolio extends Component{
 
     return (
 
-      <section id="design-portfolio" className="padding-y">
+      <section id="design-portfolio" className="padding-y d-flex">
+          <div className="flex-33 width-100 padding text">
+            <h2>
+              Design Portfolio
+            </h2>
+            <p className="width-100">
+            I've also worked as a Graphic Designer and Art Director with responsibilites such as:
+            <br/><br/>
+            Develop comprehensive branding strategies tailored to the unique needs and goals of various companies
+            <br/><br/>
+            Design visual identities, including logos, typography, and colour schemes, to establish strong brand recognition
+            </p>
+        </div>
 
-        <div className="width-100 text-center">
-
-          <h2>
-            Design Portfolio
-          </h2>
-
+        <div className="flex-66 width-100 design-projects">
+          {projects}
         </div>
 
         <DesignViewer
           id={this.state.id}
           type="design"
         />
-
-        <div className="emoji contrast first-emoji">😲</div>
-
-        <div className="padding-y d-flex design-projects">
-
-          {projects}
-
-        </div>
-
-        <div className="emoji contrast second-emoji">😊</div>
-
       </section>
     );
 

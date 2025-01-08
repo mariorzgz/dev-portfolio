@@ -82,61 +82,40 @@ class WebPortfolio extends Component{
 
     return (
 
-      <section id="web-portfolio" className="padding-y">
-
-        <div className="d-flex">
-
-          <div className="width-33 padding">
-
+      <section id="web-portfolio" className="padding-y d-flex">
+          <div className="flex-33 width-100 padding">
             <h2>
               Web Portfolio
             </h2>
-
-            <p className="width-66">
-
-              I've worked for 1 year in <span data-cursor="spain" id="spain" className="contrast">Spain</span> and I've done an intensive Ruby on Rails bootcamp in <span data-cursor="munich" id="munich" className="contrast">Munich</span> at Le Wagon.
-
-              <br></br>
-              <br></br>
-              I also like to learn on my own about other coding languages and I have tons of personal projects.
-
+            <p className="width-100">
+            I’m currently working as a UX Engineer, applying both my Graphic Design and Web Development knowledge into websites, campaigns and landing pages.
+            <br/><br/>
+            I’m a very passionate and curious person, interested in both art and code. I take accessibility very seriously and I’m always happy to try new ideas and learn new tools.
+            <br/><br/>
+            I've worked with multiple clients such as Siemens, Samsung and Roche. In the past I've worked with small business and I like to have some projects on the side too.
             </p>
-
           </div>
 
-
-          <Viewer
-            id={this.state.id}
-            type="web"
-          />
-
-          <div className="web-projects slider">
-
+          <div className="flex-66 width-100 web-projects slider">
             {/* <div className="projects-cta">
               Click on the projects!
             </div> */}
-
             <div className="d-flex slider-wrap animation-top">
-
               {firstHalf}{firstHalf}
-
             </div>
-
             <div className="d-flex slider-wrap animation-down">
-
               {secondHalf}{secondHalf}
-
             </div>
-
           </div>
 
           <div className="web-projects-mobile">
-
             {allProjects}
-
           </div>
 
-        </div>
+        <Viewer
+            id={this.state.id}
+            type="web"
+          />
 
       </section>
     );

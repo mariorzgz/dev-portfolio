@@ -6,7 +6,9 @@
   position: fixed;
   top: 0;
   left: 0;
-  background-color: #FFF3E2;
+  background-color: var(--color-red);
+  color: var(--color-yellow);
+  fill: var(--color-yellow);
   width: 100vw;
   height: 100vh;
   z-index: 999;

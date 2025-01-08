@@ -1,4 +1,10 @@
 /* Web Portfolio */
+#web-portfolio {
+  background-color: var(--color-blue);
+  color: var(--color-light);
+  border-radius: 50px 50px 0 0;
+}
+
 .web-projects{
   display: flex;
   flex-direction: column;
@@ -11,8 +17,10 @@
 }
 
 .web-projects .project{
-  width: 600px;
-  padding: 10px 5px;
+  width: 650px;
+  height: 300px;
+  padding: 10px 10px;
+  border-radius: 25px;
 }
 
 @keyframes scroll{

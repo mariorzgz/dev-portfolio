@@ -1,11 +1,13 @@
 /* Viewer */
 
-#viewer, #design-viewer{
+#viewer,
+#design-viewer{
   position: fixed;
-  background: #3619FD;
+  border-radius: 50px;
+  background: var(--color-light);
   width: 100%;
   min-height: 100vh;
-  color: white;
+  color: var(--color-dark);
   height: 100%;
   top: 0;
   left: 0;
@@ -18,7 +20,8 @@
   transition: transform 0.5s ease-in-out, opacity 0.4s ease-in;
 }
 
-#viewer.open-viewer, #design-viewer.open-viewer{
+#viewer.open-viewer,
+#design-viewer.open-viewer{
   opacity: 1;
   display: flex;
   align-items: center;
@@ -26,15 +29,16 @@
   transform: translateY(0vh);
 }
 
-.box{
+.box {
   display: flex;
   flex-direction: column;
   height: 100%;
+  flex: 100%;
 }
 
 #viewer h2, #viewer p, #viewer a,
 #design-viewer h2, #design-viewer p, #design-viewer a{
-  color: white;
+  color: var(--color-dark);
   margin: .2em 0em;
 }
 
@@ -42,7 +46,7 @@
   position: absolute;
   text-align: right;
   background-color: transparent;
-  color: white;
+  color: var(--color-dark);
   top: 2em;
   right: 6em;
   z-index: 6;
@@ -57,9 +61,22 @@
   justify-content: space-around;
 }
 
+.skills li {
+  list-style-type: none;
+  padding: .4em 1em .2em;
+  margin-right: 1em;
+  background-color: var(--color-red);
+  color: var(--color-light);
+  border-radius: 50px;
+  /* border: 3px solid black; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 #viewer .skills li,
 #design-viewer .skills li{
-  border: 3px solid white;
+  /* border: 3px solid white; */
 }
 
 .project-attributes{
@@ -111,28 +128,29 @@
   justify-content: space-between;
   position: absolute;
   background-color: transparent;
-  color: white;
-  padding: 3em 0px;
+  color: var(--color-dark);
+  padding: .4em 1em .2em;
   left: 2em;
   z-index: 4;
 }
 
 #design-viewer .project-link{
   position: absolute;
-  background-color: #3619FD;
-  color: white;
+  background-color: var(--color-red);
+  color: var(--color-light);
   text-align: right;
   bottom: 2em;
   right: 3em;
   z-index: 6;
-  border: 3px solid white;
   border-radius: 50px;
-  padding: 5px 10px;
+  padding: .4em 1em .2em;
 }
 
 #design-viewer .project-link:hover{
-  color: #3619FD;
-  background-color: white;
+  color: var(--color-light);
+  background-color: var(--color-dark);
+  transition: background-color ease-in-out .2s;
+  text-decoration: none;
 }
 
 /* Media Queries */
@@ -143,7 +161,7 @@
   .close-icon{
     top: 1em;
     right: 1em;
-    background-color: #3619FD;
+    background-color: var(--color-light);
     border-radius: 50px;
     padding: 5px 10px;
   }
@@ -225,7 +243,7 @@
   #design-viewer .gallery li{
     padding: 0px;
     border-radius: 0px;
-    background-color: #3619FD;
+    background-color: var(--color-light);
   }
 
   #design-viewer .gallery img{
@@ -234,7 +252,7 @@
   }
 
   #design-viewer .project-link{
-    border: 3px solid #3619FD;
+    border: 3px solid var(--color-light);
     top: 1em;
     bottom: initial;
     right: initial;
