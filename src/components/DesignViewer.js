@@ -54,10 +54,8 @@ class DesignViewer extends React.Component{
 
             <div className="project-data width-33">
 
-              <h2 id="title" className="padding-bottom margin-0">{project.title}</h2>
-              <div className="width-50">
-                <p id="description" className="margin-0">{project.description}</p>
-              </div>
+              <h2 id="title" className="">{project.title}</h2>
+              <p id="description" className="margin-0">{project.description}</p>
               <div className="padding-top">
                 <p>Coauthor: {project.coauthor}</p>
                 <p>Year: {project.year}</p>

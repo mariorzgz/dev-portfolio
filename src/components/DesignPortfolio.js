@@ -36,7 +36,8 @@ class DesignPortfolio extends Component{
 
     const projects = designprojects.map(project => {
         return (
-          <div className="project hvr-grow" data-cursor="hover"
+          <div className="project hvr-grow" 
+          data-cursor="hover" tabIndex={0}
           key={project.id}
           id={project.id}
           style={{
@@ -48,7 +49,12 @@ class DesignPortfolio extends Component{
             // width: "300px"
           }}
           alt={project.title}
-          onClick={this.handleProjects}>
+          onClick={this.handleProjects}
+          onKeyDown={(e) => {
+            if (e.key === "Enter")
+              this.handleProjects(e)
+          }}
+          >
             <p>{project.title}</p>
           </div>
         )

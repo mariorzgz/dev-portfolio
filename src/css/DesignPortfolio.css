@@ -30,6 +30,11 @@
   /* aspect-ratio: 9 / 16; */
 }
 
+.design-projects .project:focus-visible {
+  outline: 4px solid var(--color-yellow);
+  outline-offset: 4px;
+}
+
 .design-projects .project p {
   opacity: 0;
   pointer-events: none;
