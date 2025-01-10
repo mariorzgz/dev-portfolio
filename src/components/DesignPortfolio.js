@@ -14,8 +14,8 @@ class DesignPortfolio extends Component{
   }
 
   handleProjects(e){
-    const id = e.target.getAttribute("id");
-
+    console.log("open design")
+    const id = e.target.getAttribute("id");    
     this.setState({
       id: id,
       isViewerOpen: true
@@ -27,6 +27,7 @@ class DesignPortfolio extends Component{
   openViewer(){
     const viewer = document.getElementById("design-viewer");
     const body = document.querySelector("body");
+    viewer.showModal();
     viewer.classList.add("open-viewer");
     body.classList.add("no-scroll");
   }
@@ -63,9 +64,9 @@ class DesignPortfolio extends Component{
             <p className="width-100">
             I've also worked as a Graphic Designer and Art Director with responsibilites such as:
             <br/><br/>
-            Develop comprehensive branding strategies tailored to the unique needs and goals of various companies
+            Develop comprehensive branding strategies tailored to the unique needs and goals of various companies.
             <br/><br/>
-            Design visual identities, including logos, typography, and colour schemes, to establish strong brand recognition
+            Design visual identities, including logos, typography, and colour schemes, to establish strong brand recognition.
             </p>
         </div>
 

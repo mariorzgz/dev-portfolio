@@ -5,15 +5,12 @@
   border-radius: 50px 50px 0 0;
 }
 
-.web-projects{
+.web-projects {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
   overflow: hidden;
-}
-
-.web-projects .d-flex{
-  overflow: hidden;
+  padding: 20px 0;
 }
 
 .web-projects .project{
@@ -21,6 +18,12 @@
   height: 300px;
   padding: 10px 10px;
   border-radius: 25px;
+}
+
+.web-projects .project:focus-visible {
+  outline: 4px solid var(--color-dark);
+  outline-offset: -4px;
+  z-index: 10;
 }
 
 @keyframes scroll{

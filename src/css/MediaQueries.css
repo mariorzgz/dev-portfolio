@@ -14,16 +14,24 @@
     font-size: 1.7em;
   }
 
-  .padding{
-    padding: 3em 2em;
+  .padding {
+    padding: 2em 2em;
   }
 
-  .padding-x{
-    padding: 0em 2em;
+  .padding-x {
+    padding: 0 2em;
   }
 
-  .padding-y{
-    padding: 1em 0em;
+  .padding-y {
+    padding: 2em 0;
+  }
+
+  .padding-bottom {
+    padding-bottom: 2em;
+  }
+
+  .padding-top {
+    padding-top: 2em;
   }
 
   .width-50,
@@ -108,22 +116,8 @@
 
   /* Services */
 
-  #services{
-    padding: 1em;
-  }
-
-  #services ul{
-    padding: 0em 0em;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-content: center;
-    align-items: center;
-    justify-content: center;
-  }
-
-  #services li{
-    margin-top: 1em;
+  #services ul li {
+    padding: .3em 1em .1em;
   }
 
   /* Contact */

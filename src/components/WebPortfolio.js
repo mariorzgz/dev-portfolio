@@ -15,7 +15,6 @@ class WebPortfolio extends Component{
 
   handleProjects(e){
     const id = e.target.getAttribute("id");
-
     this.setState({
       id: id,
       isViewerOpen: true
@@ -27,8 +26,11 @@ class WebPortfolio extends Component{
   openViewer(){
     const viewer = document.getElementById("viewer");
     const body = document.querySelector("body");
+    // viewer.showModal();
+    viewer.showModal();
     viewer.classList.add("open-viewer");
     body.classList.add("no-scroll");
+    console.log("open web")
   }
 
   render(){
@@ -51,10 +53,14 @@ class WebPortfolio extends Component{
     const firstHalf = webprojects.slice(0,3).map(project => {
         return (
           <video className="project project-desktop hvr-grow"
-          data-cursor="hover"
+          data-cursor="hover" tabIndex={0}
           key={project.id}
           alt={project.title}
           onClick={this.handleProjects}
+          onKeyDown={(e) => {
+            if (e.key === "Enter")
+              this.handleProjects(e)
+          }}
           id={project.id}
           data-title={project.title}
           autoPlay muted loop>
@@ -67,10 +73,14 @@ class WebPortfolio extends Component{
     const secondHalf = webprojects.slice(3, webprojects.length).map(project => {
       return (
         <video className="project project-desktop hvr-grow"
-        data-cursor="hover"
+        data-cursor="hover" tabIndex={0}
         key={project.id}
         alt={project.title}
         onClick={this.handleProjects}
+        onKeyDown={(e) => {
+          if (e.key === "Enter")
+            this.handleProjects(e)
+        }}
         id={project.id}
         data-title={project.title}
         autoPlay muted loop>
@@ -88,11 +98,11 @@ class WebPortfolio extends Component{
               Web Portfolio
             </h2>
             <p className="width-100">
-            I’m currently working as a UX Engineer, applying both my Graphic Design and Web Development knowledge into websites, campaigns and landing pages
+            I’m currently working as a UX Engineer, applying both my Graphic Design and Web Development knowledge into websites, campaigns and landing pages.
             <br/><br/>
-            I’m a very passionate and curious person, interested in both art and code. I take accessibility very seriously and I’m always happy to try new ideas and learn new tools
+            I’m a very passionate and curious person, interested in both art and code. I take accessibility very seriously and I’m always happy to try new ideas and learn new tools.
             <br/><br/>
-            I've worked with multiple clients such as Siemens, Samsung and Roche. In the past I've worked with small business and I like to have some projects on the side too
+            I've worked with multiple clients such as Siemens, Samsung and Roche. In the past I've worked with small business and I like to have some projects on the side too.
             </p>
           </div>
 

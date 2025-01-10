@@ -49,7 +49,7 @@ export default function Navbar() {
 
         <nav className="">
 
-          <div className="contrast" id="scrollBottom" data-cursor="click">
+          <div role="button" tabIndex={0} className="contrast" id="scrollBottom" data-cursor="click">
             Contact
           </div>
 

@@ -3,10 +3,14 @@ import { designprojects } from "../data";
 
 class DesignViewer extends React.Component{
   closeViewer(){
+    console.log("close design")
     const viewer = document.getElementById("design-viewer");
-    viewer.classList.remove("open-viewer");
     const body = document.querySelector("body");
+    viewer.classList.remove("open-viewer");
     body.classList.remove("no-scroll")
+    setTimeout(function () {
+      viewer.close();
+    }, 400);
   }
   render(){
 
@@ -24,37 +28,50 @@ class DesignViewer extends React.Component{
       </li>
       )
     });
+
     return(
-      <div id="design-viewer" className={this.props.type}>
+      <>
+        <dialog id="design-viewer" 
+            className={this.props.type} 
+            aria-modal="true">
 
-        <div className="box">
+          <div className="box">
 
-          <p id="close" data-cursor="close" className="close-icon" onClick={this.closeViewer}>✕</p>
-
-          {project.link.length > 0 &&
-              <a className="project-link" target="_blank" rel="noreferrer" href={project.link}>Visit link</a>
-          }
-
-          <div className="project-data width-33">
-
-            <h2 id="title">{project.title}</h2>
-            <div className="width-50">
-              <p id="description">{project.description}</p>
+          <div role="button" tabIndex={0} id="close" data-cursor="close" 
+            className="close-icon" 
+            onClick={this.closeViewer}
+            onKeyDown={(e) => {
+              if (e.key === "Enter")
+                this.closeViewer(e)
+            }}
+            >
+              ✕
             </div>
-            <div>
-              <p>Coauthor: {project.coauthor}</p>
-              <p>Year: {project.year}</p>
+
+            {project.link.length > 0 &&
+                <a className="project-link" target="_blank" rel="noreferrer" href={project.link}>Visit link</a>
+            }
+
+            <div className="project-data width-33">
+
+              <h2 id="title" className="padding-bottom margin-0">{project.title}</h2>
+              <div className="width-50">
+                <p id="description" className="margin-0">{project.description}</p>
+              </div>
+              <div className="padding-top">
+                <p>Coauthor: {project.coauthor}</p>
+                <p>Year: {project.year}</p>
+              </div>
+
+            </div>
+
+            <div className="gallery">
+              {gallery}
             </div>
 
           </div>
-
-          <div className="gallery">
-            {gallery}
-          </div>
-
-        </div>
-
-      </div>
+        </dialog>
+      </>
     )
   }
 

@@ -5,16 +5,17 @@
   color: var(--color-dark);
   flex-direction: row;
   position: relative;
+  transform: translateY(-50px);
 }
 
-#about:before {
+#about:after {
   content: '';
   position: absolute;
   height: 50px;
   width: 100%;
   background-color: var(--color-yellow);
   border-radius: 50px 50px 0 0;
-  top: -50px;
+  bottom: -50px;
   left: 0;
 }
 
